@@ -1,0 +1,1098 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e13">
+  <meta name="description" content="Интерактивный архитектурный атлас Древнего Египта. Шесть сооружений, авторские чертежи и археологические свидетельства.">
+  <title>KEMET — Архитектура вечности</title>
+  <style>@charset "UTF-8";
+:root{color-scheme:dark;--bg:#080e13;--panel:#0d171d;--line:#203139;--muted:#8b9da5;--text:#e9eeec;--cyan:#75f5d4;--amber:#d9b57d;--mono:Menlo,Consolas,"Liberation Mono",monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6}body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 80% 20%,#0e292637,transparent 55%)}button,a,input{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button{border:0;background:none}button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--cyan);outline-offset:5px}button:disabled{opacity:.3;cursor:default}svg{display:block}::selection{background:#3e967b;color:#fff}[hidden]{display:none!important}.skip-link{position:fixed;top:-80px;left:20px;padding:12px;background:var(--cyan);color:#071612;z-index:60}.skip-link:focus{top:12px}.site-header{max-width:1560px;padding:27px 60px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:35px;border-bottom:1px solid var(--line)}.brand{display:flex;gap:12px;align-items:center}.brand svg{width:39px;height:39px;stroke:var(--cyan);stroke-width:1.3;fill:none;filter:drop-shadow(0 0 6px #6affbc40)}.brand>span{font-size:26px;font-weight:500;letter-spacing:5px;line-height:1.05}.brand small{display:block;font-family:var(--mono);font-size:8px;letter-spacing:1.6px;color:var(--muted);margin-top:8px;white-space:nowrap}.top-nav{display:flex;align-items:center;gap:31px;font-size:13px}.top-nav a,.top-nav button{white-space:nowrap;position:relative;padding:10px 0;color:#9eadb3}.top-nav .active{color:var(--cyan)}.top-nav .active:after{content:"";height:2px;background:var(--cyan);box-shadow:0 0 10px #7cf6d45c;position:absolute;bottom:-28px;left:0;right:0}.top-nav button span{margin-left:8px;color:var(--cyan)}.header-mark{font:9px var(--mono);letter-spacing:1.6px;color:var(--muted);white-space:nowrap}.header-mark i,.drawing-top i{display:inline-block;height:5px;width:5px;background:var(--cyan);border-radius:50%;box-shadow:0 0 10px #6dffd6;margin-right:7px;vertical-align:middle}main{max-width:1440px;margin:0 auto;padding:0 60px}.atlas-intro{display:flex;align-items:center;justify-content:space-between;padding-top:36px;margin-bottom:26px}.eyebrow{font:10px/1.6 var(--mono);letter-spacing:1.8px;color:var(--muted)}.tiny-star{color:var(--cyan);font-size:14px;margin-right:8px}.intro-note{font-size:11px;color:#70858f}.hero-grid{display:grid;grid-template-columns:minmax(330px,.84fr) minmax(0,1.38fr);gap:20px;align-items:center;min-height:540px}.hero-copy{padding:14px 0 16px}.location-line{display:flex;align-items:center;gap:13px;color:var(--cyan);font:10px var(--mono);letter-spacing:1.5px;text-transform:uppercase}.location-line>span:first-child{color:var(--muted)}.dash{width:26px;height:1px;background:#41605f}h1{font-size:clamp(48px,5.2vw,76px);font-weight:450;line-height:1.03;letter-spacing:-3px;margin:27px 0 22px}h1 em{display:block;font-family:var(--serif);font-weight:400;color:var(--cyan);line-height:1.07;text-shadow:0 0 30px #52ffbe17}h1 .long-title{font-size:.8em;letter-spacing:-2px}.hero-tagline{font-size:15px;color:#a2b0b6;max-width:350px;line-height:1.8;margin:0 0 19px}.era{display:flex;gap:9px;align-items:center;color:var(--amber);font:10px/1.7 var(--mono);letter-spacing:.3px}.era-icon{font-size:19px}.hero-facts{display:flex;gap:30px;margin:29px 0 26px}.hero-fact{border-left:1px solid #36524d;padding-left:14px;max-width:47%}.hero-fact strong{font-size:25px;line-height:1.25;font-weight:450;letter-spacing:-.5px;display:block}.hero-fact span{font:9px/1.7 var(--mono);color:var(--muted);display:block;margin-top:6px}.explore-button{display:inline-flex;align-items:center;gap:28px;border:1px solid #527a70;padding:12px 19px;font-size:12px;background:linear-gradient(120deg,#16322c,#101c1e);transition:.2s}.explore-button span{font-size:20px;color:var(--cyan)}.explore-button:hover{border-color:var(--cyan);box-shadow:0 0 25px #7bffd21b}.hero-footnote{font:9px/1.7 var(--mono);color:#748890;max-width:350px;margin:14px 0 0}.drawing-card{position:relative;min-width:0;background:radial-gradient(ellipse at 50% 42%,#17413b38,transparent 63%);border:1px solid #243c3e;box-shadow:inset 0 0 70px #0e393714;isolation:isolate}.drawing-card:before,.drawing-card:after{content:"";position:absolute;width:24px;height:24px;border-color:var(--cyan);opacity:.75;pointer-events:none}.drawing-card:before{top:-1px;left:-1px;border-top:1px solid;border-left:1px solid}.drawing-card:after{bottom:-1px;right:-1px;border-bottom:1px solid;border-right:1px solid}.drawing-top{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;font:9px var(--mono);letter-spacing:1.2px;color:#99b9b2}.icon-button{display:grid;place-items:center;width:32px;height:32px;border:1px solid #304942;color:var(--cyan);line-height:1}.icon-button svg{width:15px;fill:none;stroke:currentColor;stroke-width:1.5}.icon-button:hover{background:#16342c}.drawing-stage{height:380px;position:relative;overflow:hidden;background-image:linear-gradient(#58b5ac06 1px,transparent 1px),linear-gradient(90deg,#58b5ac06 1px,transparent 1px);background-size:35px 35px}.drawing-stage svg{width:100%;height:100%;overflow:visible}.drawing-legend{display:flex;padding:0 22px;gap:22px;font:8px var(--mono);letter-spacing:.3px;color:#7e9a97;align-items:center}.drawing-legend>span{display:flex;gap:7px;align-items:center}.legend-line{width:16px;height:1px;background:#76d1bc}.legend-dot{width:5px;height:5px;background:var(--amber);border-radius:50%}.compass{margin-left:auto;color:var(--cyan)}.drawing-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:20px 20px 10px}.view-switch{display:flex;gap:3px;padding:3px;background:#050b0ebf;border:1px solid #243734}.view-switch button{font-size:10px;padding:7px 17px;color:#97a9a9;white-space:nowrap;border:1px solid transparent}.view-switch .active{color:var(--cyan);background:#17322d;border-color:#33574c}.zoom-control{display:flex;align-items:center;gap:1px}.zoom-control button{font:12px var(--mono);color:#9fb8b1;min-width:29px;height:30px}.zoom-control #zoom-reset{font-size:9px;min-width:46px}.zoom-control button:hover{color:var(--cyan);background:#17312c}.drawing-disclaimer{font:8px/1.7 var(--mono);color:#6f8788;margin:0;padding:0 21px 13px}.drawing-card.is-expanded{position:fixed;inset:20px;z-index:40;background:var(--bg);display:flex;flex-direction:column;box-shadow:0 0 0 30px #020708ed}.is-expanded .drawing-stage{flex:1;height:auto;min-height:0}.is-expanded .drawing-bottom{max-width:750px;width:100%;align-self:center}.is-expanded .drawing-legend{max-width:750px;width:100%;align-self:center}.is-expanded .drawing-disclaimer{text-align:center;margin:8px}.is-expanded .drawing-stage svg{max-height:100%}.collection-heading{display:flex;align-items:center;justify-content:space-between;margin:40px 0 15px;gap:20px}.collection-heading h2{font-size:17px;letter-spacing:-.3px;font-weight:450;margin:0}.collection-heading>span{font:8px var(--mono);color:var(--muted);letter-spacing:1px;white-space:nowrap}.collection-heading>span span{color:var(--cyan);margin-left:15px}.monument-rail{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.monument-card{position:relative;text-align:left;border:1px solid var(--line);padding:15px 14px 13px;background:#0d161b8a;min-width:0;transition:border-color .25s,background .25s}.monument-card:hover{border-color:#558479;background:#122620}.monument-card.selected{border-color:#5caf98;background:linear-gradient(155deg,#17352e80,#0c1b1880);box-shadow:0 0 20px #47e4ad08}.monument-card.selected:after{content:"";position:absolute;right:12px;top:15px;width:5px;height:5px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px #7cffe5}.card-index{font:8px var(--mono);color:#6a8583}.monument-card.selected .card-index{color:var(--cyan)}.mini-diagram{width:100%;height:65px;margin:5px auto 7px;opacity:.66}.selected .mini-diagram{opacity:1}.card-name{font-size:12px;font-weight:500;display:block;white-space:normal;line-height:1.4;min-height:34px}.card-place{font:8px var(--mono);color:var(--muted);margin-top:5px;display:block;letter-spacing:.5px}.details-section,.construction-section,.timeline-section{padding-top:78px}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:28px}.section-heading h2{font-weight:450;font-size:31px;letter-spacing:-.8px;line-height:1.3;margin:10px 0 0}.section-heading>p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}.anatomy-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:32px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0}.point-list{display:flex;flex-direction:column;gap:8px}.point-button{display:flex;align-items:center;gap:13px;text-align:left;border:1px solid transparent;padding:12px 15px;font-size:13px;color:#95a9ae;line-height:1.5}.point-button>span{font:10px var(--mono);color:var(--muted);border:1px solid #38504b;width:25px;height:25px;display:grid;place-items:center;flex-shrink:0}.point-button.active{color:var(--cyan);border-color:#254c41;background:#132920}.point-button.active>span{color:var(--cyan);border-color:#679e8c}.point-detail{padding:14px 25px 10px 10px;align-self:center}.point-detail .eyebrow{color:var(--amber);font-size:9px}.point-detail h3{font-size:22px;font-weight:450;margin:10px 0 12px;letter-spacing:-.4px}.point-detail p{font-size:14px;line-height:1.85;color:#a7b7bb;margin:0;max-width:660px}.point-detail .detail-source{display:inline-block;margin-top:15px;color:#8bcab8;font-size:11px;border-bottom:1px solid #2f5d4e}.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding-top:30px}.evidence{padding:26px 30px;border:1px solid #23372f;background:linear-gradient(125deg,#0d201a80,transparent)}.evidence.unresolved{border-color:#40382c;background:linear-gradient(125deg,#29201666,transparent)}.evidence-label{font:9px var(--mono);color:var(--cyan);letter-spacing:1.4px;display:flex;align-items:center;gap:9px}.evidence-label i{width:5px;height:5px;border-radius:50%;background:var(--cyan)}.unresolved .evidence-label{color:var(--amber)}.unresolved .evidence-label i{background:var(--amber)}.evidence h3{font-size:19px;font-weight:450;line-height:1.45;margin:17px 0 12px}.evidence p{font-size:13px;color:#9cacaf;line-height:1.85;margin:0}.research-strip{display:flex;align-items:center;gap:24px;background:#10191f;padding:27px 30px;margin-top:25px;border:1px solid #243640}.research-icon{color:var(--cyan);font:50px var(--serif);line-height:1}.research-strip>div{flex:1}.research-strip .eyebrow{font-size:8px;color:#83b5b8}.research-strip h3{font-size:17px;font-weight:450;line-height:1.5;margin:6px 0}.research-strip p{font-size:12px;color:#99abb1;line-height:1.8;margin:0}.text-button{font-size:11px;white-space:nowrap;color:#b7d8ce;padding:8px 0}.text-button span{margin-left:10px}.subtle-label{font:8px var(--mono);letter-spacing:.9px;color:var(--muted)}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.process-step{padding:27px 24px 30px 0;margin-right:23px;border-right:1px solid var(--line);position:relative}.process-step:last-child{border:0;margin-right:0;padding-right:0}.process-num{font:10px var(--mono);color:var(--cyan)}.process-num:after{content:"↗";color:#547e73;float:right}.process-step:last-child .process-num:after{content:"◇"}.process-step h3{font-weight:450;font-size:17px;line-height:1.45;margin:19px 0 10px}.process-step p{font-size:12px;color:#97aaae;line-height:1.85;margin:0}.process-step small{display:inline-block;font:8px var(--mono);color:var(--amber);margin-top:17px;border-bottom:1px solid #594b38;padding-bottom:4px}.recall{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;column-gap:30px;background:#101c1f;padding:23px 28px;margin-top:24px;border-left:2px solid #68af9b}.recall .eyebrow{font-size:8px}.recall p{font-size:14px;margin:7px 0 0}.recall button{font-size:11px;border-bottom:1px solid #4c7a6b;padding:9px 0;color:var(--cyan);white-space:nowrap}.recall button span{padding-left:30px;font-size:17px}.recall #recall-answer{width:100%;border-top:1px solid #284139;margin:20px 0 0;padding:20px 0 0;color:#abc8be;font-size:13px;line-height:1.8}.timeline-scroll{overflow-x:auto;padding:14px 0 5px;scrollbar-color:#316052 transparent;scrollbar-width:thin}.timeline{display:grid;grid-template-columns:repeat(6,1fr);min-width:880px;position:relative;gap:20px}.timeline:before{content:"";position:absolute;left:0;right:0;top:39px;height:1px;background:linear-gradient(90deg,#70e0c3,#35695a 65%,#796444)}.timeline-item{text-align:left;padding:0 0 15px;position:relative;min-width:0}.timeline-date{font:10px var(--mono);color:#90c3b4;display:block;line-height:20px}.timeline-node{position:relative;display:block;width:7px;height:7px;margin:16px 0 18px;border:1px solid #80b6a6;border-radius:50%;background:var(--bg);box-shadow:0 0 0 5px var(--bg)}.timeline-item.active .timeline-node{background:var(--cyan);box-shadow:0 0 0 4px #1f3c31,0 0 16px #80ffd660}.timeline-name{display:block;font-size:12px;line-height:1.4;color:#b9c4c4}.timeline-era{display:block;font:8px/1.7 var(--mono);color:#748a8b;margin-top:7px}.timeline-note{font:9px/1.9 var(--mono);color:#788d92;margin-top:12px;max-width:860px}.sources-section{margin:75px 0 58px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:39px 0;background:radial-gradient(ellipse at 80% 50%,#16362944,transparent 60%)}.sources-section>div{display:flex;align-items:center;justify-content:space-between;gap:30px}.sources-section h2{font-size:33px;line-height:1.4;letter-spacing:-.6px;font-weight:400;margin:14px 0 20px}.sources-section em{font-family:var(--serif);font-weight:400;color:#a3c7b9}.sources-section>p{font-size:12px;color:var(--muted);max-width:650px}.source-button{border:1px solid #497566;padding:16px 23px;font-size:12px;white-space:nowrap;color:#bbdccf}.source-button span{margin-left:35px;color:var(--cyan)}.source-button:hover{background:#1a3027}footer{max-width:1440px;padding:0 60px 30px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:25px;color:#788b91;font:9px var(--mono)}.footer-brand{font:20px var(--sans);color:#b1c1ba;letter-spacing:4px;display:flex;align-items:center;gap:25px}.footer-brand span{color:#69947f;font-size:23px}dialog{background:#101a20;color:var(--text);border:1px solid #3a5b50;padding:32px 35px;max-width:740px;width:calc(100% - 32px);max-height:85dvh;box-shadow:0 0 100px #050a0d80}dialog::backdrop{background:#03070be8;backdrop-filter:blur(8px)}.dialog-top{display:flex;justify-content:space-between;align-items:center;gap:20px}dialog h2{font-size:29px;font-weight:450;line-height:1.3;letter-spacing:-.5px;margin:21px 0}dialog>p{color:#a4b8bd;font-size:14px;line-height:1.85}.dialog-intro{font-size:13px}.source-group{border-top:1px solid #2d3f41;margin-top:25px;padding-top:18px}.source-group h3{font-size:18px;font-weight:450;margin:5px 0 14px}.source-link{display:block;border-left:1px solid #386354;padding:2px 0 2px 14px;margin:15px 0}.source-link strong{font-size:12px;line-height:1.7;color:var(--cyan);font-weight:450;display:block}.source-link span{font-size:11px;color:#90a5aa;display:block;margin-top:5px}.source-link:hover strong{text-decoration:underline}.dialog-footnote{font:10px/1.8 var(--mono);color:#7f999b;border-top:1px solid #293f3b;padding-top:20px;margin-top:28px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);opacity:0;background:#19382e;border:1px solid #629b83;padding:10px 22px;font-size:12px;pointer-events:none;transition:.2s;z-index:100}.toast.show{opacity:1;transform:translate(-50%,0)}
+/* Drafting language */
+.wire{fill:none;stroke:#6cd5bc;stroke-width:1.35;stroke-linejoin:round;stroke-linecap:round}.wire.soft{stroke:#387769;stroke-width:.8}.wire.dim{stroke:#30594e;stroke-width:.8}.wire.bright{stroke:#a1ffe1;stroke-width:1.8;filter:url(#glow)}.stone-fill{fill:#153a302b;stroke:#65c9ae;stroke-width:1.2}.stone-side{fill:#09271f85;stroke:#469580;stroke-width:1.1}.stone-top{fill:#265b4138;stroke:#7cdbb7;stroke-width:1.2}.amber-line{fill:none;stroke:#d7b67e;stroke-width:1.4}.amber-fill{fill:#c19b5230;stroke:#d5b57c;stroke-width:1.2}.hidden-line{stroke-dasharray:5 7;opacity:.6}.svg-label{fill:#8cbbab;font:13px var(--mono);letter-spacing:1.5px}.svg-small{fill:#669785;font:10px var(--mono);letter-spacing:1px}.svg-dim{fill:#d3b781;font:14px var(--mono);letter-spacing:.6px}.hotspot{cursor:pointer;outline:none}.hotspot .hotspot-hit{fill:transparent;stroke:none}.hotspot .hotspot-ring{fill:#0c201c;stroke:#b7d9b5;stroke-width:1.3}.hotspot text{fill:#dcdfbe;font:12px var(--mono);text-anchor:middle;dominant-baseline:central;pointer-events:none}.hotspot.active .hotspot-ring{stroke:#dbbb80;fill:#473923;filter:url(#gold-glow)}.hotspot.active text{fill:#ffdaa1}.hotspot:hover .hotspot-ring,.hotspot:focus-visible .hotspot-ring{stroke:#fff;stroke-width:2.3}.hotspot-halo{stroke:#c6b17540;fill:none;stroke-width:1;pointer-events:none}.diagram-content{transform-origin:500px 335px;transition:transform .25s ease}.drawing-enter{animation:drawing-in .45s ease}@keyframes drawing-in{from{opacity:.2}to{opacity:1}}
+@media(min-width:1500px){.hero-grid{min-height:610px}.drawing-stage{height:425px}.hero-tagline{font-size:16px;max-width:375px}}
+@media(max-width:1100px){.site-header{padding:25px 35px}.header-mark{display:none}main{padding:0 35px}.hero-grid{grid-template-columns:.82fr 1.1fr;gap:12px}h1{font-size:56px}.drawing-stage{height:360px}.hero-facts{gap:20px}.hero-fact strong{font-size:22px}.drawing-bottom{padding:18px 13px 9px;gap:7px}.view-switch button{padding:7px 12px}.monument-rail{gap:7px}.monument-card{padding:12px 10px}.card-name{font-size:11px}.mini-diagram{height:60px}.section-heading h2{font-size:27px}.process-step{margin-right:18px;padding-right:18px}footer{padding:0 35px 30px}.intro-note{font-size:10px}}
+@media(max-width:820px){html{scroll-padding-top:35px}.site-header{padding:22px 25px;gap:20px}.brand>span{font-size:21px}.brand small{font-size:6px}.brand svg{width:32px}.top-nav{gap:20px;font-size:11px}.top-nav .active:after{bottom:-23px}main{padding:0 25px}.intro-note{display:none}.atlas-intro{padding-top:25px;margin-bottom:15px}.hero-grid{grid-template-columns:1fr 1.15fr;gap:18px}h1{font-size:44px;letter-spacing:-2px}.hero-tagline{font-size:13px;line-height:1.75}.location-line{font-size:8px;gap:9px;letter-spacing:1px}.hero-facts{gap:15px}.hero-fact{padding-left:10px}.hero-fact strong{font-size:20px}.hero-fact span{font-size:8px}.era{font-size:9px}.drawing-stage{height:330px}.drawing-top{padding:10px 13px;font-size:7px}.drawing-legend{padding:0 13px;font-size:7px;gap:10px}.drawing-bottom{flex-wrap:wrap;justify-content:center;padding-top:12px}.drawing-disclaimer{font-size:7px;padding:0 10px 11px;text-align:center}.hero-footnote{font-size:8px}.explore-button{padding:10px 13px;font-size:10px;gap:17px}.monument-rail{grid-template-columns:repeat(3,1fr);gap:10px}.monument-card{display:grid;grid-template-columns:57px 1fr;column-gap:10px;padding:13px}.card-index{grid-column:1/-1}.mini-diagram{grid-row:2/4;width:57px;height:52px;margin:3px 0}.card-name{font-size:12px;align-self:end;min-height:0;grid-column:2;grid-row:2}.card-place{grid-column:2;font-size:7px}.details-section,.construction-section,.timeline-section{padding-top:57px}.section-heading h2{font-size:25px}.section-heading>p{font-size:10px}.anatomy-grid{gap:15px;grid-template-columns:.9fr 1.2fr}.point-button{font-size:11px;padding:10px 8px}.point-detail{padding-right:0}.point-detail h3{font-size:19px}.point-detail p{font-size:12px}.evidence-grid{gap:15px}.evidence{padding:22px}.evidence h3{font-size:17px}.evidence p{font-size:12px}.research-strip{padding:22px;gap:17px;flex-wrap:wrap}.research-strip .text-button{margin-left:42px}.process-grid{grid-template-columns:1fr 1fr}.process-step:nth-child(2){border-right:0;margin-right:0}.process-step:nth-child(-n+2){border-bottom:1px solid var(--line)}.process-step{padding:22px 22px 22px 0;margin-right:22px}.recall{padding:23px}.recall p{font-size:13px;max-width:430px}.recall button{margin-top:8px}.sources-section h2{font-size:27px}.source-button{font-size:11px;padding:14px 17px}.source-button span{margin-left:15px}footer{padding:0 25px 25px;font-size:8px}.footer-brand{font-size:17px;gap:15px}}
+@media(max-width:600px){body{font-size:15px}.site-header{padding:18px 20px;align-items:center}.brand{gap:8px}.brand svg{width:28px;height:34px}.brand>span{font-size:20px;letter-spacing:4px}.brand small{font-size:5.5px;letter-spacing:1px}.top-nav{gap:0}.top-nav>a{display:none}.top-nav button{font-size:11px}.top-nav button span{margin-left:4px}main{padding:0 20px}.atlas-intro{margin-bottom:11px;padding-top:23px}.eyebrow{font-size:8px;letter-spacing:1.3px}.hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:23px;min-height:0}.hero-copy{padding:9px 0 0}.location-line{font-size:9px}.hero-copy h1{font-size:57px;line-height:1;letter-spacing:-2px;margin:20px 0 18px}.hero-copy h1 em{display:inline}.hero-copy h1 em:before{content:" ";white-space:pre}h1 .long-title{font-size:.85em}.hero-tagline{font-size:14px;max-width:440px;line-height:1.8;margin:0 0 14px}.era{font-size:10px}.hero-facts{margin:22px 0;gap:33px}.hero-fact strong{font-size:26px}.hero-fact span{font-size:9px}.explore-button{font-size:12px;padding:10px 15px;gap:40px}.hero-footnote{font-size:8px;max-width:none}.drawing-stage{height:310px}.drawing-top{font-size:8px;padding:12px 15px}.drawing-bottom{justify-content:space-between;padding:14px 12px 10px;gap:7px}.view-switch button{font-size:10px;padding:7px 15px}.zoom-control button{min-width:24px}.zoom-control #zoom-reset{min-width:39px}.drawing-legend{font-size:7px;padding:0 15px}.drawing-disclaimer{text-align:left;padding:0 15px 11px}.collection-heading{margin-top:31px;gap:10px}.collection-heading h2{font-size:16px;max-width:210px}.collection-heading>span{font-size:7px;letter-spacing:.4px;white-space:normal;max-width:110px;text-align:right;line-height:1.7}.collection-heading>span span{margin-left:5px}.monument-rail{grid-template-columns:repeat(2,1fr);gap:9px}.monument-card{grid-template-columns:48px 1fr;column-gap:9px;padding:11px}.mini-diagram{width:48px;height:47px}.card-name{font-size:11px}.card-place{font-size:7px}.section-heading{align-items:flex-start;margin-bottom:22px;gap:15px;flex-direction:column}.section-heading h2{font-size:27px;line-height:1.35;margin-top:8px}.section-heading>p{font-size:11px;max-width:330px}.section-heading>p br{display:none}.anatomy-grid{display:flex;flex-direction:column;padding:21px 0;gap:15px}.point-list{flex-direction:row;flex-wrap:wrap;gap:7px}.point-button{flex:1 1 100%;gap:10px;padding:10px;font-size:12px}.point-button>span{width:23px;height:23px}.point-detail{padding:8px 5px 5px}.point-detail h3{font-size:21px}.point-detail p{font-size:13px}.evidence-grid{grid-template-columns:1fr;padding-top:23px;gap:13px}.evidence{padding:24px}.evidence h3{font-size:20px}.evidence p{font-size:13px}.research-strip{padding:22px 20px;gap:15px;margin-top:20px}.research-icon{font-size:33px;align-self:flex-start}.research-strip h3{font-size:17px}.research-strip p{font-size:12px}.research-strip .text-button{margin-left:0;width:100%;text-align:left;padding-top:13px;border-top:1px solid var(--line)}.research-strip>div{min-width:calc(100% - 50px)}.process-step{margin-right:15px;padding-right:15px}.process-step h3{font-size:17px}.process-step p{font-size:12px}.process-step small{font-size:7px;line-height:1.8}.recall{padding:20px}.recall button{margin-top:14px}.recall p{font-size:14px}.timeline-note{font-size:8px}.timeline{min-width:830px}.sources-section{margin:55px 0 34px;padding:29px 0}.sources-section>div{align-items:flex-start;flex-direction:column;gap:0}.sources-section h2{font-size:27px;line-height:1.45;margin:17px 0 22px}.source-button{margin-bottom:13px}.sources-section>p{font-size:11px}footer{padding:0 20px 25px;flex-wrap:wrap;row-gap:16px}footer>span:nth-child(2){width:calc(100% - 145px);text-align:right;font-size:8px}footer>span:last-child{width:100%;text-align:left;font-size:8px}.drawing-card.is-expanded{inset:10px}.is-expanded .drawing-bottom{justify-content:center}.is-expanded .drawing-top{font-size:7px}dialog{padding:24px 22px}dialog h2{font-size:25px}dialog>p{font-size:13px}.dialog-footnote{font-size:9px}}
+@media(max-width:350px){main{padding:0 15px}.site-header{padding:17px 15px}.hero-copy h1{font-size:49px}.hero-facts{gap:23px}.hero-fact strong{font-size:23px}.drawing-bottom{justify-content:center}.drawing-stage{height:270px}.card-name{font-size:10px}.monument-card{grid-template-columns:37px 1fr;column-gap:7px;padding:10px}.mini-diagram{width:37px}.collection-heading h2{font-size:15px}.point-button{font-size:11px}.process-step h3{font-size:15px}.sources-section h2{font-size:25px}}
+#qr-dialog{max-width:440px;text-align:center}#qr-dialog .dialog-top{text-align:left}#qr-dialog h2{font-size:30px;line-height:1.4;margin:22px 0}.qr-art{background:#fff;padding:0;width:min(260px,100%);margin:0 auto 24px;box-shadow:0 0 40px #73f5b816}.qr-art svg{width:100%;height:auto}#qr-dialog>p{font-size:13px;max-width:300px;margin:0 auto 15px}.qr-url{display:block;color:var(--cyan);font:12px/1.6 var(--mono);overflow-wrap:anywhere;margin:18px 0 23px}#qr-button{border:1px solid #35594f;padding:4px 8px;color:var(--cyan);font-family:var(--mono);font-size:11px}#qr-button span{font-size:17px;margin-left:7px}#copy-link{font-size:11px;padding:12px 17px}#copy-link span{margin-left:15px}@media(max-width:600px){.top-nav{gap:14px}.top-nav #about-button{font-size:10px}.top-nav #qr-button{font-size:9px}.top-nav #qr-button span{font-size:14px;margin-left:3px}}@media(max-width:350px){.top-nav{gap:7px}.top-nav #about-button{font-size:9px}.brand>span{font-size:18px;letter-spacing:3px}.brand small{font-size:5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+@media print{body{background:#fff;color:#111}.site-header,.top-nav,.drawing-bottom,.monument-rail,.source-button,.recall button,.sources-trigger,footer{display:none}main{padding:20px}.hero-grid{display:block}.drawing-card{break-inside:avoid}.hero-copy h1{color:#111}.hero-copy h1 em{color:#1d6b55}.details-section,.construction-section,.timeline-section{padding-top:30px}.point-detail p,.evidence p,.process-step p{color:#222}dialog{display:none}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#atlas">Перейти к атласу</a>
+<header class="site-header">
+  <a class="brand" href="#atlas" aria-label="KEMET — главная"><svg viewBox="0 0 42 40" aria-hidden="true"><path d="M3 32 21 3l18 29H3Zm9 0L21 3l8 29M3 32l18-8 18 8M21 24V3"/></svg><span>KEMET<small>АРХИТЕКТУРА ВЕЧНОСТИ</small></span></a>
+  <nav class="top-nav" aria-label="Основная навигация"><a href="#atlas" class="active">Атлас сооружений</a><a href="#timeline">Линия времени</a><button type="button" id="about-button">Об атласе <span>↗</span></button><button type="button" id="qr-button" aria-label="Открыть QR-код приложения">QR <span>⌗</span></button></nav>
+  <span class="header-mark"><i></i> ЕГИПЕТ · 6 ОБЪЕКТОВ</span>
+</header>
+<main>
+  <section id="atlas" class="atlas" aria-label="Атлас сооружений">
+    <div class="atlas-intro"><span class="eyebrow"><span class="tiny-star">✦</span> КАМЕНЬ. ГЕОМЕТРИЯ. НЕИЗВЕСТНОЕ.</span><span class="intro-note">Путешествие в инженерную мысль древности</span></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="location-line"><span id="object-number">01 / 06</span><span class="dash"></span><span id="object-location"></span></div>
+        <h1 id="object-title"></h1>
+        <p id="object-tagline" class="hero-tagline"></p>
+        <div class="era"><span class="era-icon">◷</span><span id="object-era"></span></div>
+        <div class="hero-facts" id="hero-facts"></div>
+        <a href="#details" class="explore-button">Внутри сооружения <span>↘</span></a>
+        <p class="hero-footnote" id="hero-footnote"></p>
+      </div>
+      <div class="drawing-card" id="drawing-card">
+        <div class="drawing-top"><span><i></i> <span id="drawing-heading">ПРОСТРАНСТВЕННАЯ СХЕМА</span></span><button class="icon-button" id="expand-drawing" type="button" aria-label="Развернуть чертёж" title="Развернуть чертёж"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div>
+        <div class="drawing-stage" id="drawing-stage"><svg id="main-drawing" viewBox="0 0 1000 650" role="group" aria-label="Архитектурная схема"></svg></div>
+        <div class="drawing-legend"><span><i class="legend-line"></i> конструкция</span><span><i class="legend-dot"></i> изучить деталь</span><span class="compass">◇ СХЕМА</span></div>
+        <div class="drawing-bottom"><div class="view-switch" role="group" aria-label="Вид чертежа"><button data-view="volume" class="active" aria-pressed="true">Объём</button><button data-view="section" aria-pressed="false">Разрез</button><button data-view="plan" aria-pressed="false">План</button></div><div class="zoom-control"><button id="zoom-out" type="button" aria-label="Уменьшить чертёж">−</button><button id="zoom-reset" type="button" aria-label="Сбросить масштаб">100%</button><button id="zoom-in" type="button" aria-label="Увеличить чертёж">+</button></div></div>
+        <p class="drawing-disclaimer" id="drawing-disclaimer">Учебная схема · не обмерный чертёж</p>
+      </div>
+    </div>
+    <div class="collection-heading"><h2>Шесть взглядов на невозможное</h2><span>ВЫБЕРИТЕ СООРУЖЕНИЕ <span>↓</span></span></div>
+    <div class="monument-rail" id="monument-rail" role="group" aria-label="Выбор сооружения"></div>
+  </section>
+  <section id="details" class="details-section">
+    <div class="section-heading"><div><span class="eyebrow">01 / АНАТОМИЯ СООРУЖЕНИЯ</span><h2>Детали, которые меняют взгляд.</h2></div><p>Нажмите на точку на чертеже<br>или выберите деталь ниже.</p></div>
+    <div class="anatomy-grid"><div class="point-list" id="point-list" role="group" aria-label="Детали сооружения"></div><article class="point-detail" id="point-detail" aria-live="polite"></article></div>
+    <div class="evidence-grid"><article class="evidence established"><span class="evidence-label"><i></i> ЧТО ИЗВЕСТНО</span><h3 id="known-title"></h3><p id="known-text"></p></article><article class="evidence unresolved"><span class="evidence-label"><i></i> ОТКРЫТЫЙ ВОПРОС</span><h3 id="unknown-title"></h3><p id="unknown-text"></p></article></div>
+    <div class="research-strip"><span class="research-icon">⌁</span><div><span class="eyebrow" id="research-label"></span><h3 id="research-title"></h3><p id="research-text"></p></div><button class="text-button sources-trigger" type="button">К источникам <span>↗</span></button></div>
+  </section>
+  <section class="construction-section" id="construction"><div class="section-heading"><div><span class="eyebrow">02 / ЛОГИКА СТРОИТЕЛЬСТВА</span><h2 id="process-heading">От каменоломни к вечности.</h2></div><span class="subtle-label">СВИДЕТЕЛЬСТВА + ИНТЕРПРЕТАЦИЯ</span></div><div class="process-grid" id="process-grid"></div><div class="recall"><div><span class="eyebrow">ОДНА МЫСЛЬ, ЧТОБЫ ЗАПОМНИТЬ</span><p id="recall-question"></p></div><button id="recall-button" type="button" aria-expanded="false" aria-controls="recall-answer">Показать ответ <span>+</span></button><p id="recall-answer" hidden></p></div></section>
+  <section class="timeline-section" id="timeline"><div class="section-heading"><div><span class="eyebrow">03 / МАСШТАБ ВРЕМЕНИ</span><h2>Не одна эпоха. Тысячелетия.</h2></div><p>От первых каменных пирамид<br>до поздних галерей Серапеума.</p></div><div class="timeline-scroll"><div class="timeline" id="timeline-items"></div></div><p class="timeline-note">Порядок событий; расстояния на линии условны. Даты приблизительны. Серапеум строился и расширялся на протяжении многих веков.</p></section>
+  <section class="sources-section"><span class="eyebrow">ЛЮБОПЫТСТВО НУЖДАЕТСЯ В ОПОРАХ</span><div><h2>За каждым чертежом —<br><em>следы, тексты, исследования.</em></h2><button class="sources-trigger source-button" type="button">Открыть источники <span>↗</span></button></div><p>Схемы созданы для объяснения конструкции. Установленные факты, рабочие гипотезы и неизвестное обозначены отдельно.</p></section>
+</main>
+<footer><a class="footer-brand" href="#atlas">KEMET<span>𓂀</span></a><span>Египет. Инженерия, пережившая время.</span><span>Интерактивный атлас · 2026</span></footer>
+<dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-top"><span class="eyebrow">БИБЛИОТЕКА АТЛАСА</span><button class="icon-button close-dialog" aria-label="Закрыть источники">✕</button></div><h2 id="sources-title">На чём основаны пояснения</h2><p class="dialog-intro">Официальные описания памятников, археологические материалы и научные публикации. Ссылки открываются в новой вкладке и требуют интернета.</p><div id="sources-list"></div><p class="dialog-footnote">Проверка источников: 9 октября 2026. Приблизительные размеры и датировки округлены. Иллюстрации авторские, схематические; пропорции отдельных внутренних элементов упрощены для читаемости.</p></dialog>
+<dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">О ПРОЕКТЕ</span><button class="icon-button close-dialog" aria-label="Закрыть информацию">✕</button></div><h2 id="about-title">Архитектура вечности</h2><p>«Кемет» — древнеегипетское название страны, обычно переводимое как «чёрная земля». Этот атлас посвящён тому, как люди превращали камень в сооружения невероятного масштаба.</p><p>Выберите памятник, переключайте объём, разрез и план. Пронумерованные точки связывают чертёж с объяснением. Бирюзовый цвет выделяет конструкцию и подтверждённые данные, янтарный — вопросы и интерпретации.</p><p>Все иллюстрации — учебные схемы, а не точные реконструкции. Общепринятая датировка и назначение отделены от нерешённых инженерных вопросов.</p><p>Сохранённый HTML-файл работает офлайн. Внешние источники доступны при подключении к интернету.</p></dialog>
+<dialog id="qr-dialog" aria-labelledby="qr-title"><div class="dialog-top"><span class="eyebrow">ВОЗЬМИТЕ АТЛАС С СОБОЙ</span><button class="icon-button close-dialog" aria-label="Закрыть QR-код">✕</button></div><h2 id="qr-title">Древний Египет.<br>В вашем телефоне.</h2><div class="qr-art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" role="img" aria-label="QR-код: https://evgk724.github.io/kemet-atlas/" shape-rendering="crispEdges"><title>KEMET — https://evgk724.github.io/kemet-atlas/</title><rect width="37" height="37" fill="#ffffff"/><path d="M4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM7 4h1v1h-1zM8 4h1v1h-1zM9 4h1v1h-1zM10 4h1v1h-1zM12 4h1v1h-1zM14 4h1v1h-1zM17 4h1v1h-1zM22 4h1v1h-1zM24 4h1v1h-1zM26 4h1v1h-1zM27 4h1v1h-1zM28 4h1v1h-1zM29 4h1v1h-1zM30 4h1v1h-1zM31 4h1v1h-1zM32 4h1v1h-1zM4 5h1v1h-1zM10 5h1v1h-1zM12 5h1v1h-1zM13 5h1v1h-1zM14 5h1v1h-1zM15 5h1v1h-1zM16 5h1v1h-1zM18 5h1v1h-1zM20 5h1v1h-1zM21 5h1v1h-1zM23 5h1v1h-1zM24 5h1v1h-1zM26 5h1v1h-1zM32 5h1v1h-1zM4 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM13 6h1v1h-1zM16 6h1v1h-1zM17 6h1v1h-1zM18 6h1v1h-1zM19 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM26 6h1v1h-1zM28 6h1v1h-1zM29 6h1v1h-1zM30 6h1v1h-1zM32 6h1v1h-1zM4 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM14 7h1v1h-1zM16 7h1v1h-1zM17 7h1v1h-1zM18 7h1v1h-1zM20 7h1v1h-1zM21 7h1v1h-1zM24 7h1v1h-1zM26 7h1v1h-1zM28 7h1v1h-1zM29 7h1v1h-1zM30 7h1v1h-1zM32 7h1v1h-1zM4 8h1v1h-1zM6 8h1v1h-1zM7 8h1v1h-1zM8 8h1v1h-1zM10 8h1v1h-1zM12 8h1v1h-1zM13 8h1v1h-1zM14 8h1v1h-1zM15 8h1v1h-1zM16 8h1v1h-1zM17 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM23 8h1v1h-1zM26 8h1v1h-1zM28 8h1v1h-1zM29 8h1v1h-1zM30 8h1v1h-1zM32 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM17 9h1v1h-1zM18 9h1v1h-1zM20 9h1v1h-1zM21 9h1v1h-1zM22 9h1v1h-1zM24 9h1v1h-1zM26 9h1v1h-1zM32 9h1v1h-1zM4 10h1v1h-1zM5 10h1v1h-1zM6 10h1v1h-1zM7 10h1v1h-1zM8 10h1v1h-1zM9 10h1v1h-1zM10 10h1v1h-1zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM27 10h1v1h-1zM28 10h1v1h-1zM29 10h1v1h-1zM30 10h1v1h-1zM31 10h1v1h-1zM32 10h1v1h-1zM13 11h1v1h-1zM14 11h1v1h-1zM16 11h1v1h-1zM17 11h1v1h-1zM20 11h1v1h-1zM23 11h1v1h-1zM4 12h1v1h-1zM7 12h1v1h-1zM8 12h1v1h-1zM9 12h1v1h-1zM10 12h1v1h-1zM11 12h1v1h-1zM12 12h1v1h-1zM14 12h1v1h-1zM15 12h1v1h-1zM17 12h1v1h-1zM20 12h1v1h-1zM21 12h1v1h-1zM23 12h1v1h-1zM24 12h1v1h-1zM25 12h1v1h-1zM28 12h1v1h-1zM30 12h1v1h-1zM31 12h1v1h-1zM32 12h1v1h-1zM4 13h1v1h-1zM5 13h1v1h-1zM6 13h1v1h-1zM8 13h1v1h-1zM9 13h1v1h-1zM11 13h1v1h-1zM14 13h1v1h-1zM16 13h1v1h-1zM17 13h1v1h-1zM18 13h1v1h-1zM19 13h1v1h-1zM21 13h1v1h-1zM22 13h1v1h-1zM23 13h1v1h-1zM25 13h1v1h-1zM28 13h1v1h-1zM30 13h1v1h-1zM31 13h1v1h-1zM8 14h1v1h-1zM9 14h1v1h-1zM10 14h1v1h-1zM12 14h1v1h-1zM13 14h1v1h-1zM14 14h1v1h-1zM17 14h1v1h-1zM19 14h1v1h-1zM24 14h1v1h-1zM30 14h1v1h-1zM4 15h1v1h-1zM7 15h1v1h-1zM9 15h1v1h-1zM11 15h1v1h-1zM14 15h1v1h-1zM15 15h1v1h-1zM17 15h1v1h-1zM21 15h1v1h-1zM25 15h1v1h-1zM27 15h1v1h-1zM29 15h1v1h-1zM32 15h1v1h-1zM4 16h1v1h-1zM5 16h1v1h-1zM6 16h1v1h-1zM7 16h1v1h-1zM8 16h1v1h-1zM10 16h1v1h-1zM12 16h1v1h-1zM14 16h1v1h-1zM17 16h1v1h-1zM19 16h1v1h-1zM22 16h1v1h-1zM24 16h1v1h-1zM25 16h1v1h-1zM26 16h1v1h-1zM27 16h1v1h-1zM32 16h1v1h-1zM4 17h1v1h-1zM5 17h1v1h-1zM11 17h1v1h-1zM12 17h1v1h-1zM14 17h1v1h-1zM15 17h1v1h-1zM17 17h1v1h-1zM18 17h1v1h-1zM19 17h1v1h-1zM20 17h1v1h-1zM21 17h1v1h-1zM22 17h1v1h-1zM25 17h1v1h-1zM26 17h1v1h-1zM27 17h1v1h-1zM28 17h1v1h-1zM29 17h1v1h-1zM30 17h1v1h-1zM31 17h1v1h-1zM32 17h1v1h-1zM5 18h1v1h-1zM6 18h1v1h-1zM7 18h1v1h-1zM8 18h1v1h-1zM10 18h1v1h-1zM13 18h1v1h-1zM15 18h1v1h-1zM17 18h1v1h-1zM19 18h1v1h-1zM21 18h1v1h-1zM23 18h1v1h-1zM25 18h1v1h-1zM26 18h1v1h-1zM27 18h1v1h-1zM30 18h1v1h-1zM32 18h1v1h-1zM4 19h1v1h-1zM6 19h1v1h-1zM8 19h1v1h-1zM9 19h1v1h-1zM13 19h1v1h-1zM14 19h1v1h-1zM15 19h1v1h-1zM20 19h1v1h-1zM27 19h1v1h-1zM28 19h1v1h-1zM30 19h1v1h-1zM32 19h1v1h-1zM4 20h1v1h-1zM5 20h1v1h-1zM7 20h1v1h-1zM8 20h1v1h-1zM9 20h1v1h-1zM10 20h1v1h-1zM11 20h1v1h-1zM12 20h1v1h-1zM16 20h1v1h-1zM18 20h1v1h-1zM19 20h1v1h-1zM25 20h1v1h-1zM27 20h1v1h-1zM29 20h1v1h-1zM4 21h1v1h-1zM5 21h1v1h-1zM6 21h1v1h-1zM8 21h1v1h-1zM9 21h1v1h-1zM14 21h1v1h-1zM15 21h1v1h-1zM17 21h1v1h-1zM18 21h1v1h-1zM19 21h1v1h-1zM22 21h1v1h-1zM23 21h1v1h-1zM24 21h1v1h-1zM25 21h1v1h-1zM28 21h1v1h-1zM30 21h1v1h-1zM31 21h1v1h-1zM4 22h1v1h-1zM5 22h1v1h-1zM6 22h1v1h-1zM7 22h1v1h-1zM8 22h1v1h-1zM9 22h1v1h-1zM10 22h1v1h-1zM12 22h1v1h-1zM13 22h1v1h-1zM19 22h1v1h-1zM22 22h1v1h-1zM23 22h1v1h-1zM26 22h1v1h-1zM27 22h1v1h-1zM29 22h1v1h-1zM32 22h1v1h-1zM4 23h1v1h-1zM5 23h1v1h-1zM8 23h1v1h-1zM11 23h1v1h-1zM12 23h1v1h-1zM16 23h1v1h-1zM18 23h1v1h-1zM20 23h1v1h-1zM23 23h1v1h-1zM24 23h1v1h-1zM27 23h1v1h-1zM28 23h1v1h-1zM29 23h1v1h-1zM30 23h1v1h-1zM4 24h1v1h-1zM5 24h1v1h-1zM7 24h1v1h-1zM10 24h1v1h-1zM11 24h1v1h-1zM15 24h1v1h-1zM17 24h1v1h-1zM18 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM24 24h1v1h-1zM25 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM28 24h1v1h-1zM29 24h1v1h-1zM30 24h1v1h-1zM31 24h1v1h-1zM12 25h1v1h-1zM13 25h1v1h-1zM14 25h1v1h-1zM15 25h1v1h-1zM16 25h1v1h-1zM18 25h1v1h-1zM19 25h1v1h-1zM20 25h1v1h-1zM22 25h1v1h-1zM24 25h1v1h-1zM28 25h1v1h-1zM29 25h1v1h-1zM4 26h1v1h-1zM5 26h1v1h-1zM6 26h1v1h-1zM7 26h1v1h-1zM8 26h1v1h-1zM9 26h1v1h-1zM10 26h1v1h-1zM12 26h1v1h-1zM16 26h1v1h-1zM18 26h1v1h-1zM19 26h1v1h-1zM21 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM26 26h1v1h-1zM28 26h1v1h-1zM29 26h1v1h-1zM4 27h1v1h-1zM10 27h1v1h-1zM12 27h1v1h-1zM13 27h1v1h-1zM14 27h1v1h-1zM18 27h1v1h-1zM21 27h1v1h-1zM23 27h1v1h-1zM24 27h1v1h-1zM28 27h1v1h-1zM4 28h1v1h-1zM6 28h1v1h-1zM7 28h1v1h-1zM8 28h1v1h-1zM10 28h1v1h-1zM12 28h1v1h-1zM14 28h1v1h-1zM17 28h1v1h-1zM18 28h1v1h-1zM19 28h1v1h-1zM23 28h1v1h-1zM24 28h1v1h-1zM25 28h1v1h-1zM26 28h1v1h-1zM27 28h1v1h-1zM28 28h1v1h-1zM29 28h1v1h-1zM32 28h1v1h-1zM4 29h1v1h-1zM6 29h1v1h-1zM7 29h1v1h-1zM8 29h1v1h-1zM10 29h1v1h-1zM12 29h1v1h-1zM15 29h1v1h-1zM19 29h1v1h-1zM20 29h1v1h-1zM21 29h1v1h-1zM22 29h1v1h-1zM27 29h1v1h-1zM32 29h1v1h-1zM4 30h1v1h-1zM6 30h1v1h-1zM7 30h1v1h-1zM8 30h1v1h-1zM10 30h1v1h-1zM13 30h1v1h-1zM14 30h1v1h-1zM15 30h1v1h-1zM19 30h1v1h-1zM25 30h1v1h-1zM27 30h1v1h-1zM28 30h1v1h-1zM30 30h1v1h-1zM31 30h1v1h-1zM32 30h1v1h-1zM4 31h1v1h-1zM10 31h1v1h-1zM14 31h1v1h-1zM15 31h1v1h-1zM16 31h1v1h-1zM25 31h1v1h-1zM27 31h1v1h-1zM28 31h1v1h-1zM29 31h1v1h-1zM30 31h1v1h-1zM32 31h1v1h-1zM4 32h1v1h-1zM5 32h1v1h-1zM6 32h1v1h-1zM7 32h1v1h-1zM8 32h1v1h-1zM9 32h1v1h-1zM10 32h1v1h-1zM12 32h1v1h-1zM15 32h1v1h-1zM19 32h1v1h-1zM23 32h1v1h-1zM24 32h1v1h-1zM25 32h1v1h-1zM26 32h1v1h-1zM28 32h1v1h-1z" fill="#07130f"/></svg></div><p>Наведите камеру телефона на QR-код, чтобы открыть приложение.</p><a class="qr-url" href="https://evgk724.github.io/kemet-atlas/" target="_blank" rel="noopener noreferrer">evgk724.github.io/kemet-atlas ↗</a><button id="copy-link" class="source-button" type="button">Скопировать ссылку <span>↗</span></button></dialog>
+<div id="toast" class="toast" role="status"></div>
+<script>const MONUMENTS = [
+  {
+    "id": "khufu",
+    "name": "Пирамида Хеопса",
+    "subtitle": "Геометрия, логистика и пустоты внутри камня",
+    "location": "Плато Гиза",
+    "date": "XXVI век до н. э. · IV династия",
+    "dateNote": "Министерство приводит правление Хуфу около 2589–2566 до н. э.; в других научных хронологиях годы отличаются. Не обозначать точный год постройки.",
+    "highlights": [
+      {
+        "value": "146,5 м",
+        "label": "исходная высота",
+        "context": "Высота с утраченными верхушкой и облицовкой, не сегодняшняя высота памятника.",
+        "source": "khufu-ministry"
+      },
+      {
+        "value": "≈230 м",
+        "label": "сторона основания",
+        "context": "Округлённый размер стороны квадратного основания; не длина наклонного ребра.",
+        "source": "scanpyramids-pack"
+      },
+      {
+        "value": "3",
+        "label": "известные основные камеры",
+        "context": "Подземная камера, так называемая камера царицы и камера царя. Эти названия не доказывают назначение каждой комнаты.",
+        "source": "khufu-ministry"
+      }
+    ],
+    "engineering": [
+      {
+        "title": "Разные камни для разных задач",
+        "text": "Основной массив сложен из местного известняка. Белый известняк для внешней облицовки доставляли из Туры по воде.",
+        "source": "khufu-ministry"
+      },
+      {
+        "title": "Коридор как конструкция",
+        "text": "В Большой галерее ряды камня нависают друг над другом: ступенчатое перекрытие сужает пролёт кверху.",
+        "source": "khufu-ministry"
+      },
+      {
+        "title": "Стройка как система перевозок",
+        "text": "Дневник инспектора Мерера описывает рейсы с турским известняком к комплексу Хуфу. Он раскрывает часть логистики, но не всю технологию возведения пирамиды.",
+        "source": "merer-ifao"
+      }
+    ],
+    "discoveries": [
+      {
+        "year": "2017",
+        "title": "Big Void",
+        "text": "Мюонная съёмка выявила большую область пониженной плотности над Большой галереей: длина не менее 30 м. Её существование подтвердили три технологии регистрации мюонов. Назначение и точная архитектурная форма не установлены.",
+        "source": "bigvoid-2017"
+      },
+      {
+        "year": "2023",
+        "title": "Северный коридор",
+        "text": "Отдельное пространство за шевронами северной грани: примерно 9 м в длину и около 2 × 2 м в поперечнике. Работа 2023 года уточнила геометрию ранее обнаруженной аномалии. Это не Big Void; функцию измерения сами по себе не объясняют.",
+        "source": "northcorridor-2023"
+      }
+    ],
+    "established": "Пирамида относится к царскому погребальному комплексу Хуфу. Известны внутренние помещения, материалы и документальные свидетельства водной доставки камня.",
+    "unresolved": "Какие конфигурации подъёмных путей применялись на разных высотах и как именно использовались вновь обнаруженные пустоты? Единой подтверждённой последовательности всех строительных операций пока нет.",
+    "diagram": {
+      "preferred": "Осевой разрез с отдельным режимом наружной геометрии",
+      "labels": [
+        "Камера царя",
+        "Камера царицы — условное название",
+        "Большая галерея",
+        "Подземная камера",
+        "Северный коридор ≈9 м",
+        "Big Void ≥30 м"
+      ],
+      "caveats": [
+        "Big Void рисовать полупрозрачной областью с пунктирным краем, без конкретной двери или содержимого.",
+        "Северный коридор располагать у северной грани за шевронами, отдельно от большой полости над галереей.",
+        "Разгрузочные помещения над камерой царя — известная система, их нельзя подменять Big Void.",
+        "Если показана строительная рампа, подписать конкретную гипотезу и дать переключатель; не выдавать за археологически установленную форму."
+      ]
+    },
+    "sources": [
+      {
+        "id": "khufu-ministry",
+        "title": "Министерство туризма и древностей Египта — The Great Pyramid",
+        "url": "https://egymonuments.gov.eg/monuments/the-great-pyramid/",
+        "supports": "Датировка, исходная высота, материалы, камеры, Большая галерея."
+      },
+      {
+        "id": "merer-ifao",
+        "title": "IFAO — Les papyrus de la mer Rouge I: Le journal de Merer",
+        "url": "https://www.ifao.egnet.net/publications/catalogue/9782724707069/",
+        "supports": "Публикация первичных папирусов и перевозка известняка из Туры."
+      },
+      {
+        "id": "bigvoid-2017",
+        "title": "Morishima et al., Nature, 2017 — Discovery of a big void",
+        "url": "https://doi.org/10.1038/nature24647",
+        "accessUrl": "https://arxiv.org/abs/1711.01576",
+        "supports": "Big Void, не менее 30 м, три метода, неизвестная функция."
+      },
+      {
+        "id": "northcorridor-2023",
+        "title": "Procureur et al., Nature Communications, 2023 — North Face Corridor",
+        "url": "https://doi.org/10.1038/s41467-023-36351-0",
+        "supports": "Уточнение геометрии отдельного северного коридора ≈9 × 2 × 2 м."
+      }
+    ],
+    "title": "Пирамида <em>Хеопса</em>",
+    "short": "Хеопс",
+    "place": "ГИЗА",
+    "tagline": "Четыре грани. Миллионы камней. И пространство внутри, которое мы всё ещё учимся видеть.",
+    "footnote": "Хуфу — египетское имя фараона, известного как Хеопс.",
+    "facts": [
+      [
+        "146,5 м",
+        "исходная высота"
+      ],
+      [
+        "≈ 230 м",
+        "сторона основания"
+      ]
+    ],
+    "points": [
+      {
+        "title": "Разные камни — разные задачи",
+        "kicker": "МАТЕРИАЛЫ И НАГРУЗКИ",
+        "text": "Местный известняк образует основной массив; светлый турский известняк покрывал внешние грани. В камере царя использован гранит. Над её плоским потолком расположена система разгрузочных помещений. Утрата облицовки изменила и облик, и высоту пирамиды.",
+        "source": 0
+      },
+      {
+        "title": "Большая галерея",
+        "kicker": "ГЕОМЕТРИЯ ПЕРЕКРЫТИЯ",
+        "text": "Стены высокой наклонной галереи сходятся кверху уступами: каждый следующий ряд камня немного нависает над предыдущим. Так уменьшается пролёт между стенами. Галерея соединена с системой внутренних ходов; названия «камера царя» и «камера царицы» сами по себе не объясняют все функции помещений.",
+        "source": 0
+      },
+      {
+        "title": "Пустоты, найденные мюонами",
+        "kicker": "ДВА РАЗНЫХ ОТКРЫТИЯ · 2017 / 2023",
+        "text": "В 2017 году над Большой галереей выявили Big Void — область пониженной плотности длиной не менее 30 м. В 2023 году уточнили геометрию отдельного северного коридора: около 9 × 2 × 2 м. Функции обоих пространств остаются открытым вопросом. Пунктир на разрезе обозначает схематичную область Big Void, а не известную форму комнаты.",
+        "source": 2
+      }
+    ],
+    "knownTitle": "Камень доставляли организованно",
+    "knownText": "Дневник инспектора Мерера описывает перевозки известняка из Туры к комплексу Хуфу по воде. Это прямое свидетельство работы транспортной системы стройки.",
+    "unknownTitle": "Как поднимали камень на каждом этапе?",
+    "unknownText": "Рампы разных конфигураций и вспомогательные приёмы обсуждаются. Какая именно последовательность решений применялась на всех высотах пирамиды, полностью не установлено. Дневник Мерера не содержит полного «рецепта» её строительства.",
+    "researchLabel": "МЕТОД ИССЛЕДОВАНИЯ / МЮОННАЯ ТОМОГРАФИЯ",
+    "researchTitle": "Космические частицы читают камень",
+    "researchText": "Мюоны проходят через вещество с разной вероятностью в зависимости от его плотности и толщины. Избыток зарегистрированных частиц помог обнаружить неизвестные пустоты без разборки кладки. Геометрия полости ещё не говорит о её назначении.",
+    "process": [
+      [
+        "Добыть",
+        "Основной известняк брали в районе Гизы. Для облицовки использовали камень из Туры.",
+        "Материалы известны"
+      ],
+      [
+        "Доставить",
+        "Папирусы Мерера фиксируют рейсы с турским известняком к комплексу Хуфу.",
+        "Документальное свидетельство"
+      ],
+      [
+        "Поднять",
+        "Подъёмные пути должны были меняться вместе с высотой и доступной площадкой. Их точная схема спорна.",
+        "Рабочие гипотезы"
+      ],
+      [
+        "Распределить нагрузку",
+        "Галерея с уступчатым перекрытием и помещения над камерой царя решают разные конструктивные задачи.",
+        "Сохранившаяся конструкция"
+      ]
+    ],
+    "recallQ": "Доказывает ли обнаруженная пустота, что найдена ещё одна гробница?",
+    "recallA": "Нет. Измерение показывает область пониженной плотности и позволяет оценить её геометрию. Для вывода о назначении нужны дополнительные данные: доступ, архитектурный контекст, надписи или находки.",
+    "time": "XXVI в. до н. э.",
+    "timeEra": "Хуфу · IV династия",
+    "timeOrder": 2,
+    "disclaimer": "Учебная схема · исходный внешний объём · внутренние элементы условны"
+  },
+  {
+    "id": "osireion",
+    "name": "Осирион",
+    "alternateName": "Осирейон / Оссиреон",
+    "subtitle": "Каменный остров в подземном зале",
+    "location": "Абидос, позади храма Сети I",
+    "date": "Около XIII века до н. э. · XIX династия",
+    "dateNote": "Основное строительство и оформление относят к Сети I; часть рельефов добавлена при Мернептахе. Это не установленный памятник додинастической эпохи.",
+    "highlights": [
+      {
+        "value": "10",
+        "label": "гранитных опор",
+        "context": "Опоры центрального острова; не утверждать, что все десять — цельные монолиты.",
+        "source": "osireion-report"
+      },
+      {
+        "value": "3",
+        "label": "основных вида камня",
+        "context": "Гранит, песчаник и известняк в разных частях сооружения.",
+        "source": "osireion-report"
+      },
+      {
+        "value": "XIX",
+        "label": "династия",
+        "context": "Связь с комплексом Сети I; точные годы зависят от хронологии.",
+        "source": "osireion-report"
+      }
+    ],
+    "engineering": [
+      {
+        "title": "Строительство в котловане",
+        "text": "Подземное сооружение возводили внутри заранее вырытого большого котлована.",
+        "source": "osireion-report"
+      },
+      {
+        "title": "Стоечно-балочный зал",
+        "text": "Опоры несли гранитные архитравы и перекрытие над центральной платформой.",
+        "source": "osireion-report"
+      },
+      {
+        "title": "Камень и вода",
+        "text": "Платформу окружает канал. Различия материалов связаны с нагрузкой, влажностью и возможностью вырезать рельефы.",
+        "source": "osireion-report"
+      }
+    ],
+    "established": "Планировка, канал и опоры документированы раскопками. Связь сооружения с Сети I опирается на археологический и эпиграфический контекст.",
+    "unresolved": "Детали ритуального использования и исходного водного режима восстанавливаются неполно. Символический «остров творения» — интерпретация архитектуры.",
+    "diagram": {
+      "preferred": "План центрального зала и аксонометрия со снятой крышей",
+      "labels": [
+        "Центральная платформа",
+        "Два ряда по пять опор",
+        "Окружающий канал",
+        "Архитравы",
+        "Боковые помещения"
+      ],
+      "caveats": [
+        "Реконструированное перекрытие показывать пунктиром либо отдельным слоем.",
+        "Уровень воды рисовать условно: современное затопление не тождественно древнему режиму.",
+        "Не рисовать подтверждённый канал к Нилу или насосную систему: это не установленная геометрия.",
+        "У отчёта 1992 года проектный запад соответствует приблизительно истинному юго-западу; для упрощённой схемы не добавлять точную стрелку севера без геопривязки."
+      ]
+    },
+    "sources": [
+      {
+        "id": "osireion-report",
+        "title": "University Museum, University of Pennsylvania — Seti I / Osireion Project: season 1992",
+        "url": "https://isida-project.org/jameswesterman/10499/1992_Report_002.pdf",
+        "supports": "Первичный полевой отчёт; датировка, котлован, 10 опор, камни, канал, функции и гидрогеология. Архивная копия на стороннем сайте; авторы и учреждение проверены на титуле."
+      },
+      {
+        "id": "osireion-ees",
+        "title": "Egypt Exploration Society — The cemeteries and temples of Abydos",
+        "url": "https://www.ees.ac.uk/resource/the-cemeteries-and-temples-of-abydos.html",
+        "supports": "История раскопок и ссылка на базовый отчёт Frankfort 1933."
+      },
+      {
+        "id": "osireion-frankfort",
+        "title": "Frankfort, de Buck, Gunn — The Cenotaph of Seti I at Abydos, 1933",
+        "url": "https://archive.org/details/MEEF39.1",
+        "supports": "Базовая публикация раскопок. Библиографически проверена через EES; исходные планы во втором томе MEEF39.2."
+      }
+    ],
+    "title": "<span class=\"long-title\">Каменный</span> <em>Осирион</em>",
+    "short": "Осирион",
+    "place": "АБИДОС",
+    "tagline": "Массивные опоры, остров и окружающий его канал. Подземная архитектура на границе инженерии и ритуала.",
+    "footnote": "Встречаются написания Осирейон и Оссиреон.",
+    "facts": [
+      [
+        "10",
+        "гранитных опор"
+      ],
+      [
+        "XIX",
+        "династия"
+      ]
+    ],
+    "points": [
+      {
+        "title": "Два ряда гранитных опор",
+        "kicker": "СТОЕЧНО-БАЛОЧНАЯ СИСТЕМА",
+        "text": "На центральной платформе стоят два ряда по пять массивных гранитных опор. Они несли архитравы и перекрытие. Не все опоры выполнены из одного монолита. Сам масштаб камня впечатляет, но без обмеров нельзя приписывать каждой опоре одинаковую массу.",
+        "source": 0
+      },
+      {
+        "title": "Платформа и канал",
+        "kicker": "АРХИТЕКТУРА ВОКРУГ ОСТРОВА",
+        "text": "Центральную платформу окружает канал. Образ первозданного острова — археологическая интерпретация композиции. Начальный водный режим восстанавливается неполно: современную воду нельзя просто переносить в реконструкцию древнего сооружения. Уровень воды на схемах условный.",
+        "source": 0
+      },
+      {
+        "title": "Что скрывала крыша",
+        "kicker": "РЕКОНСТРУКЦИЯ ПЕРЕКРЫТИЯ",
+        "text": "В аксонометрии крыша снята, чтобы открыть конструкцию зала. Пунктир показывает условный принцип перекрытия, а не полностью сохранившийся верх. Планировка, материалы и надписи связывают сооружение с комплексом Сети I; позднее часть декора добавили при Мернептахе.",
+        "source": 0
+      }
+    ],
+    "knownTitle": "Сооружение связано с Сети I",
+    "knownText": "Археологический и эпиграфический контекст относят Осирион к Новому царству. Раскопки документируют котлован, центральную платформу, канал и опоры.",
+    "unknownTitle": "Как работала вода и проходил ритуал?",
+    "unknownText": "Исходный водный режим и детали церемоний известны неполно. Символическое прочтение плана убедительно объясняет отдельные элементы, но не заменяет сведений об их реальном использовании.",
+    "researchLabel": "КЛЮЧ К ПОНИМАНИЮ / КОНТЕКСТ РАСКОПОК",
+    "researchTitle": "Массивная кладка сама по себе не датирует памятник",
+    "researchText": "Датировка опирается на совокупность стратиграфии, надписей и связей с храмовым комплексом. Необычная техника и сходство с более ранними формами не доказывают додинастическое происхождение.",
+    "process": [
+      [
+        "Вырыть котлован",
+        "Подземный объём строили внутри большого открытого котлована.",
+        "Полевые исследования"
+      ],
+      [
+        "Собрать опоры",
+        "Гранит, песчаник и известняк применяли в разных частях сооружения.",
+        "Материалы известны"
+      ],
+      [
+        "Перекрыть зал",
+        "Стоечно-балочная система передавала нагрузку от перекрытия на опоры.",
+        "Архитектурная схема"
+      ],
+      [
+        "Оформить пространство",
+        "Платформа, канал и тексты включены в погребально-ритуальный замысел.",
+        "Функция интерпретируется"
+      ]
+    ],
+    "recallQ": "Можно ли считать сегодняшнее затопление точной картиной древнего зала?",
+    "recallA": "Нет. Современный уровень грунтовых вод и древний режим не тождественны. Существование канала установлено; его первоначальное заполнение и использование требуют отдельной реконструкции.",
+    "time": "XIII в. до н. э.",
+    "timeEra": "Сети I · XIX династия",
+    "timeOrder": 4,
+    "disclaimer": "Учебная схема · крыша реконструирована условно · вода не в масштабе"
+  },
+  {
+    "id": "bent",
+    "name": "Ломаная пирамида",
+    "subtitle": "Решение, изменившее силуэт",
+    "location": "Дахшур",
+    "date": "XXVI век до н. э. · Снофру, IV династия",
+    "dateNote": "Начало IV династии; приблизительный век. Хронологии правления Снофру расходятся.",
+    "highlights": [
+      {
+        "value": "≈54° → ≈43°",
+        "label": "изменение уклона",
+        "context": "Угол грани к горизонтали: нижний и верхний участки, не угол наклонного ребра.",
+        "source": "scanpyramids-pack"
+      },
+      {
+        "value": "≈105 м",
+        "label": "высота",
+        "context": "Округлённое значение для сравнения; не точность современного обмера.",
+        "source": "scanpyramids-pack"
+      },
+      {
+        "value": "2",
+        "label": "входа",
+        "context": "На северной и западной сторонах; ведут к разным внутренним системам.",
+        "source": "scanpyramids-pack"
+      }
+    ],
+    "engineering": [
+      {
+        "title": "Пологая верхняя часть",
+        "text": "Излом уменьшает наклон граней и объём верхнего массива. Геометрию можно сравнить с продолжением нижнего уклона.",
+        "source": "scanpyramids-pack"
+      },
+      {
+        "title": "Два пути внутрь",
+        "text": "Входы с разных сторон связаны с камерами, расположенными на разных уровнях.",
+        "source": "scanpyramids-pack"
+      },
+      {
+        "title": "Причину нельзя прочитать по силуэту",
+        "text": "Структурные трудности — одна из обсуждаемых причин смены уклона. Сам факт изменения известен лучше, чем мотив решения.",
+        "source": "bent-ucl"
+      }
+    ],
+    "established": "Изменение уклона и два входа — наблюдаемые особенности сооружения Снофру.",
+    "unresolved": "Почему проект изменили: из-за строительных рисков, ритуального замысла или сочетания причин? Документ с объяснением не известен.",
+    "diagram": {
+      "preferred": "Профиль с дугами углов и пунктирным продолжением нижней грани",
+      "labels": [
+        "Нижняя грань ≈54°",
+        "Верхняя грань ≈43°",
+        "Изменение уклона",
+        "Северный вход",
+        "Западный вход"
+      ],
+      "caveats": [
+        "Углы измеряются к горизонтали.",
+        "Пунктирное продолжение до вершины — геометрическое сравнение, а не подтверждённый исходный проект.",
+        "В одном плоском разрезе северный и западный коридоры нельзя изображать как лежащие в общей плоскости без оговорки."
+      ]
+    },
+    "sources": [
+      {
+        "id": "scanpyramids-pack",
+        "title": "ScanPyramids / Cairo University / HIP Institute — материалы проекта, 2015, с. 8",
+        "url": "https://www.altaplana.be/_media/blog/2015-11-01/about_scanpyramids-en.pdf",
+        "supports": "Первичный пресс-пакет проекта: высота, углы, два входа; копия на стороннем сайте."
+      },
+      {
+        "id": "bent-ucl",
+        "title": "UCL Digital Egypt — Dahshur, the Bent Pyramid",
+        "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/dahshur/bentpyramid.html",
+        "supports": "Принадлежность Снофру; причины смены уклона не документированы; исторический план и библиография раскопок."
+      },
+      {
+        "id": "bent-dai",
+        "title": "German Archaeological Institute — Dahshur, fieldwork 2019",
+        "url": "https://publications.dainst.org/journals/efb/article/view/2239",
+        "supports": "Контекст археологического исследования некрополя и строительной инфраструктуры."
+      }
+    ],
+    "title": "Ломаная <em>пирамида</em>",
+    "short": "Ломаная",
+    "place": "ДАХШУР",
+    "tagline": "Пирамида, которая меняет угол на полпути к небу. Решение строителей сохранилось в самом силуэте.",
+    "footnote": "Сооружение Снофру, отца Хуфу. Углы указаны к горизонтали.",
+    "facts": [
+      [
+        "54° → 43°",
+        "изменение уклона"
+      ],
+      [
+        "2",
+        "входа с разных сторон"
+      ]
+    ],
+    "points": [
+      {
+        "title": "Излом — след изменения решения",
+        "kicker": "ГЕОМЕТРИЯ ГРАНЕЙ",
+        "text": "Нижняя часть поднимается под углом около 54° к горизонтали, верхняя — около 43°. Более пологая вершина уменьшает объём верхнего массива относительно продолжения нижнего уклона. Геометрия видна непосредственно, а мотив изменения проекта приходится восстанавливать.",
+        "source": 1
+      },
+      {
+        "title": "Две системы помещений",
+        "kicker": "СЛОЖНОСТЬ ВНУТРИ",
+        "text": "Северный и западный входы ведут к внутренним системам на разных уровнях. В нашем разрезе ходы разных направлений сведены в одну плоскость для объяснения; это не точный срез по одной оси.",
+        "source": 0
+      },
+      {
+        "title": "Облицовка и внешний контур",
+        "kicker": "СОХРАНИВШАЯСЯ ПОВЕРХНОСТЬ",
+        "text": "Значительная часть гладкой известняковой облицовки сохранилась. Благодаря ей проще увидеть, что первоначальный облик пирамиды был геометрически строгим, а привычная ступенчатая фактура других пирамид часто отражает утрату внешнего слоя.",
+        "source": 1
+      }
+    ],
+    "knownTitle": "Наклон действительно изменён",
+    "knownText": "Излом граней и два входа — наблюдаемые особенности памятника. Это часть сохранившейся архитектуры Снофру, а не умозрительная модель.",
+    "unknownTitle": "Почему строители изменили уклон?",
+    "unknownText": "Обсуждают конструктивные трудности, изменение замысла и сочетание причин. Объясняющего решение строительного документа нет. Уверенность в форме выше, чем уверенность в мотивах.",
+    "researchLabel": "ПОДХОД / СРАВНЕНИЕ КОНСТРУКЦИЙ",
+    "researchTitle": "Архитектура оставляет следы выбора",
+    "researchText": "Сравнение кладки, камер и формы с другими пирамидами Снофру помогает реконструировать развитие технологии. Но современный расчёт устойчивости сам по себе не доказывает историческую причину решения.",
+    "process": [
+      [
+        "Начать круто",
+        "Нижняя часть получила уклон грани около 54° к горизонтали.",
+        "Наблюдаемая геометрия"
+      ],
+      [
+        "Изменить угол",
+        "Верхняя часть стала заметно более пологой — около 43°.",
+        "Наблюдаемая геометрия"
+      ],
+      [
+        "Соединить помещения",
+        "Две внутренние системы делают простой осевой разрез недостаточным.",
+        "Известная планировка"
+      ],
+      [
+        "Восстановить мотив",
+        "Конструктивные причины обсуждаются наряду с другими объяснениями.",
+        "Открытый вопрос"
+      ]
+    ],
+    "recallQ": "Что установлено надёжнее: смена угла или причина этой смены?",
+    "recallA": "Смена угла. Её можно измерить на памятнике. Причину приходится выводить из косвенных свидетельств; это отдельный уровень уверенности.",
+    "time": "XXVI в. до н. э.",
+    "timeEra": "Снофру · IV династия",
+    "timeOrder": 1,
+    "disclaimer": "Учебная схема · внутренние ходы разных направлений совмещены"
+  },
+  {
+    "id": "djoser",
+    "name": "Пирамида Джосера",
+    "subtitle": "Когда архитектура стала каменной",
+    "location": "Саккара",
+    "date": "XXVII век до н. э. · III династия",
+    "dateNote": "Министерство приводит правление Нетчерихета (Джосера) около 2667–2648 до н. э.; в литературе встречаются другие хронологии.",
+    "highlights": [
+      {
+        "value": "6",
+        "label": "ступеней",
+        "context": "Шесть уменьшающихся ярусов окончательной формы; это не шесть подтверждённых независимых построек.",
+        "source": "djoser-ministry"
+      },
+      {
+        "value": "≈60 м",
+        "label": "высота",
+        "context": "Округление для учебного сравнения; в справочниках встречаются значения около 60–62 м.",
+        "source": "djoser-memphis"
+      },
+      {
+        "value": "III",
+        "label": "династия",
+        "context": "Первый египетский пирамидальный царский комплекс такого масштаба.",
+        "source": "djoser-ministry"
+      }
+    ],
+    "engineering": [
+      {
+        "title": "От мастабы к ступеням",
+        "text": "Первоначальная форма низкой прямоугольной гробницы была расширена до многоярусного памятника.",
+        "source": "djoser-memphis"
+      },
+      {
+        "title": "Камень повторяет лёгкие материалы",
+        "text": "В комплексе каменная архитектура воспроизводит формы более ранних сооружений из недолговечных материалов.",
+        "source": "djoser-gem"
+      },
+      {
+        "title": "Две архитектуры",
+        "text": "Над землёй — ступенчатый массив и ритуальные дворы; под ним — шахты, коридоры и погребальные помещения.",
+        "source": "djoser-gem"
+      }
+    ],
+    "established": "Шестиступенчатая пирамида принадлежит комплексу Джосера. Имхотеп традиционно связывается с её архитектурным замыслом.",
+    "unresolved": "Как была организована точная последовательность расширений и подъёма камня? Назначение отдельных частей комплекса, например Южной гробницы, также интерпретируется.",
+    "diagram": {
+      "preferred": "Шесть ступеней с подсветкой этапов расширения и отдельной подземной схемой",
+      "labels": [
+        "Шесть ярусов",
+        "Раннее ядро — схема",
+        "Подземные помещения",
+        "Ритуальный комплекс"
+      ],
+      "caveats": [
+        "Анимация появления шести ступеней не должна называться точной последовательностью строительства.",
+        "Подземная система намного сложнее учебного разреза; подписать, что показаны только основные элементы.",
+        "Гидравлический подъёмник не показывать как установленную технологию.",
+        "Не называть сооружение первым применением камня вообще: камень использовался и раньше."
+      ]
+    },
+    "sources": [
+      {
+        "id": "djoser-ministry",
+        "title": "Министерство туризма и древностей Египта — Step Pyramid Complex of Djoser",
+        "url": "https://egymonuments.gov.eg/en/monuments/the-step-pyramid-complex-of-djoser",
+        "supports": "Датировка, шесть ступеней, Имхотеп, Южная гробница и ритуальные дворы."
+      },
+      {
+        "id": "djoser-memphis",
+        "title": "University of Memphis, Institute of Egyptian Art and Archaeology — Saqqara",
+        "url": "https://www.memphis.edu/egypt/resources/colortour/saqqara2.php",
+        "supports": "Около 60 м, шесть ярусов, развитие мастабы, Имхотеп."
+      },
+      {
+        "id": "djoser-gem",
+        "title": "Global Egyptian Museum — Step Pyramid",
+        "url": "https://www.globalegyptianmuseum.org/glossary.aspx?id=362",
+        "supports": "Поэтапное расширение, подземные помещения, каменная имитация лёгких конструкций, частичная неопределённость функций."
+      }
+    ],
+    "title": "Пирамида <em>Джосера</em>",
+    "short": "Джосер",
+    "place": "САККАРА",
+    "tagline": "Шесть ступеней к новой архитектуре. Каменный эксперимент, с которого начинается история египетских пирамид.",
+    "footnote": "Замысел комплекса традиционно связывают с Имхотепом.",
+    "facts": [
+      [
+        "6",
+        "ступеней"
+      ],
+      [
+        "≈ 60 м",
+        "высота"
+      ]
+    ],
+    "points": [
+      {
+        "title": "От мастабы к пирамиде",
+        "kicker": "РАСШИРЕНИЕ ЗАМЫСЛА",
+        "text": "Первоначальное ядро имело форму мастабы — низкой прямоугольной гробницы. В ходе расширений возник шестиступенчатый массив. Шесть видимых ярусов нельзя автоматически считать шестью независимыми этапами строительства.",
+        "source": 1
+      },
+      {
+        "title": "Второе сооружение — под землёй",
+        "kicker": "ШАХТЫ И ГАЛЕРЕИ",
+        "text": "Под пирамидой находится сложная система шахт, коридоров и погребальных помещений. На чертеже показаны лишь главные элементы: центральный ствол и камера. Полная подземная сеть значительно сложнее этой учебной схемы.",
+        "source": 2
+      },
+      {
+        "title": "Рождение каменного комплекса",
+        "kicker": "ПИРАМИДА И ЕЁ ОКРУЖЕНИЕ",
+        "text": "Пирамида — часть большого царского ритуального комплекса с дворами, оградой и другими сооружениями. Каменная архитектура воспроизводит формы более ранних конструкций из недолговечных материалов. Это новый масштаб применения камня, а не первое использование камня человеком.",
+        "source": 2
+      }
+    ],
+    "knownTitle": "Шесть ступеней, целый ритуальный мир",
+    "knownText": "Принадлежность комплекса Джосеру и шестиступенчатая форма хорошо установлены. За силуэтом стоят неоднократные расширения первоначального ядра.",
+    "unknownTitle": "Как развивалась стройка шаг за шагом?",
+    "unknownText": "Точная организация подъёма камня и последовательность всех операций восстанавливаются не полностью. Назначение некоторых частей комплекса, включая Южную гробницу, также обсуждается.",
+    "researchLabel": "КЛЮЧ К ПОНИМАНИЮ / АРХИТЕКТУРНАЯ ЭВОЛЮЦИЯ",
+    "researchTitle": "Камень помнит более ранние материалы",
+    "researchText": "Столбы, стены и другие элементы комплекса передают в долговечном камне знакомые формы лёгкой архитектуры. Инновация заключается и в материале, и в объединении целого ритуального ландшафта.",
+    "process": [
+      [
+        "Начать с мастабы",
+        "Низкое ядро предшествовало окончательной ступенчатой форме.",
+        "Археологическая реконструкция"
+      ],
+      [
+        "Расширить объём",
+        "Несколько изменений проекта увеличили площадь и высоту массива.",
+        "Археологическая реконструкция"
+      ],
+      [
+        "Создать подземелье",
+        "Погребальные помещения и ходы образуют отдельную сложную систему.",
+        "Сохранившаяся планировка"
+      ],
+      [
+        "Объединить комплекс",
+        "Пирамида работает вместе с дворами, храмами и оградой.",
+        "Контекст памятника"
+      ]
+    ],
+    "recallQ": "Почему шесть ступеней не равны шести точно известным этапам стройки?",
+    "recallA": "Видимая форма — результат нескольких расширений и изменений. Археологические стадии определяют по кладке и взаимному положению частей, а не простым подсчётом ярусов.",
+    "time": "XXVII в. до н. э.",
+    "timeEra": "Джосер · III династия",
+    "timeOrder": 0,
+    "disclaimer": "Учебная схема · 6 ярусов · показана только часть подземной системы"
+  },
+  {
+    "id": "serapeum",
+    "name": "Серапеум Саккары",
+    "subtitle": "Большие саркофаги в тесном подземелье",
+    "location": "Саккара, некрополь Мемфиса",
+    "date": "Новое царство — эпоха Птолемеев",
+    "dateNote": "Комплекс использовался начиная со времени Аменхотепа III и расширялся в разные эпохи. Не приписывать все ныне видимые каменные саркофаги одной дате XIV века до н. э.",
+    "highlights": [
+      {
+        "value": "Апис",
+        "label": "священный бык",
+        "context": "Погребальный комплекс быков Аписа, связанных с культом Птаха в Мемфисе.",
+        "source": "serapeum-ministry"
+      },
+      {
+        "value": "2",
+        "label": "главные галереи",
+        "context": "Упрощённое описание двух протяжённых подземных систем; весь памятник включает разные этапы и помещения.",
+        "source": "serapeum-ministry"
+      },
+      {
+        "value": "Стелы",
+        "label": "исторические свидетельства",
+        "context": "Надписи и посвящения из комплекса помогают связать погребения и царские правления.",
+        "source": "serapeum-louvre"
+      }
+    ],
+    "engineering": [
+      {
+        "title": "Галереи и боковые камеры",
+        "text": "Подземный план организует путь движения и отдельные помещения для погребений.",
+        "source": "serapeum-mariette"
+      },
+      {
+        "title": "Каменный сосуд с крышкой",
+        "text": "Саркофаг — полый каменный корпус и отдельная тяжёлая крышка. Массу следует оценивать для конкретного экземпляра, различая обе части.",
+        "source": "serapeum-mariette"
+      },
+      {
+        "title": "Маршрут важен не меньше веса",
+        "text": "Для доставки нужно учитывать ширину прохода, повороты, уклон и место для установки. В интерактивной схеме это инженерный разбор, а не восстановленная во всех деталях древняя операция.",
+        "source": "author-inference"
+      }
+    ],
+    "established": "Погребальная функция комплекса связана с Аписом и подтверждается археологическими находками и надписями.",
+    "unresolved": "Для каждого большого саркофага полная последовательность транспортировки и установки известна не одинаково хорошо. Форма и обработка камня сами по себе не доказывают применение неизвестных машин.",
+    "diagram": {
+      "preferred": "Фрагмент галереи с боковой камерой и отдельная аксонометрия саркофага",
+      "labels": [
+        "Галерея",
+        "Погребальная камера",
+        "Каменный корпус",
+        "Отдельная крышка",
+        "Предполагаемый путь перемещения"
+      ],
+      "caveats": [
+        "Не указывать универсальные 70, 100 или 120 тонн без обмера и определения, учитывается ли крышка.",
+        "Показать условный фрагмент, не выдавая симметричную сетку одинаковых камер за точный план всего комплекса.",
+        "Салазки, рычаги или подсыпку маркировать как реконструкцию конкретной операции.",
+        "Не подписывать саркофаги как 'резонаторы' или 'аккумуляторы': такая функция археологически не установлена."
+      ]
+    },
+    "sources": [
+      {
+        "id": "serapeum-ministry",
+        "title": "Министерство туризма и древностей Египта — Serapeum",
+        "url": "https://egymonuments.gov.eg/monuments/serapeum",
+        "supports": "Апис, две галереи, длительная история использования, мумии и саркофаги."
+      },
+      {
+        "id": "serapeum-louvre",
+        "title": "Louvre Collections — стела из Больших подземелий Серапеума",
+        "url": "https://collections.louvre.fr/en/ark:/53355/cl010020350",
+        "supports": "Первичный музейный объект: находка из галереи Серапеума, царская датировка и археологический контекст."
+      },
+      {
+        "id": "serapeum-mariette",
+        "title": "Mariette / Maspero — Le Sérapeum de Memphis, Atlas, 1882",
+        "url": "https://digi.ub.uni-heidelberg.de/diglit/mariette1882atlas",
+        "supports": "Первичная археологическая публикация и планы. Использовать для дальнейшей детализации схем; универсальная масса ящиков отсюда не извлекалась."
+      }
+    ],
+    "title": "Подземный <em>Серапеум</em>",
+    "short": "Серапеум",
+    "place": "САККАРА",
+    "tagline": "Массивные каменные саркофаги в глубине скалы. Здесь главный инженерный вопрос — не только вес, но и путь.",
+    "footnote": "Комплекс расширялся столетиями; отдельные галереи и саркофаги разновременны.",
+    "facts": [
+      [
+        "Апис",
+        "священный бык"
+      ],
+      [
+        "2",
+        "главные галереи"
+      ]
+    ],
+    "points": [
+      {
+        "title": "Корпус из одного блока",
+        "kicker": "КАМЕНЬ, ИЗ КОТОРОГО УБРАЛИ ЛИШНЕЕ",
+        "text": "Каменный саркофаг — это полый корпус с отдельной крышкой. Чтобы оценивать массу, нужны размеры конкретного экземпляра, объём полости и порода камня. Одно эффектное число не описывает все саркофаги Серапеума.",
+        "source": 2
+      },
+      {
+        "title": "Отдельная тяжёлая крышка",
+        "kicker": "УСТАНОВКА В ОГРАНИЧЕННОМ ПРОСТРАНСТВЕ",
+        "text": "Обработка корпуса и крышки — разные операции; их перемещение и соединение также требуют отдельных решений. В аксонометрии крышки приподняты для читаемости. Это способ показать устройство, а не реконструкция подъёмного механизма.",
+        "source": 2
+      },
+      {
+        "title": "Галерея задаёт условия",
+        "kicker": "МАРШРУТ ВАЖЕН НЕ МЕНЬШЕ ВЕСА",
+        "text": "Путь к боковой погребальной камере ограничен шириной проходов, поворотами и доступным местом. Наш план показывает принцип галерейного комплекса. Число и расположение помещений упрощены; предполагаемая линия движения служит инженерным объяснением.",
+        "source": 2
+      }
+    ],
+    "knownTitle": "Здесь хоронили быков Аписа",
+    "knownText": "Погребальная функция подтверждается находками и надписями. Стелы из комплекса связывают культы, погребения и царские правления.",
+    "unknownTitle": "Как установили каждый саркофаг?",
+    "unknownText": "Сведения о последовательности доставки и установки для разных экземпляров неодинаковы. Размер и качество обработки ставят инженерные вопросы, но сами по себе не доказывают применение неизвестных машин.",
+    "researchLabel": "МЕТОД / АРХЕОЛОГИЯ И ЭПИГРАФИКА",
+    "researchTitle": "Надписи возвращают камню контекст",
+    "researchText": "Первичные планы раскопок и музейные стелы позволяют обсуждать назначение комплекса на основе свидетельств. Саркофаги нельзя датировать одной общей датой: история памятника продолжается от Нового царства до Птолемеев.",
+    "process": [
+      [
+        "Вырубить камеру",
+        "Боковые помещения открываются в протяжённые подземные галереи.",
+        "Сохранившаяся планировка"
+      ],
+      [
+        "Обработать камень",
+        "Для корпуса вынимают внутренний объём; крышку делают отдельно.",
+        "Устройство саркофага"
+      ],
+      [
+        "Доставить внутрь",
+        "Ширина, уклон и повороты маршрута ограничивают возможные операции.",
+        "Инженерный разбор"
+      ],
+      [
+        "Установить и закрыть",
+        "Каждое погребение относится к своему этапу истории комплекса.",
+        "Контекст и надписи"
+      ]
+    ],
+    "recallQ": "Почему нельзя указать одну точную массу для всех саркофагов?",
+    "recallA": "Они различаются размерами, породой и толщиной стенок. Нужно уточнить, измеряется ли только корпус или корпус вместе с крышкой, и опираться на конкретный обмер.",
+    "time": "VII–I вв. до н. э.",
+    "timeEra": "Поздние галереи; культ старше",
+    "timeOrder": 5,
+    "disclaimer": "Условный фрагмент галереи · крышки приподняты · план не обмерный"
+  },
+  {
+    "id": "obelisk",
+    "name": "Незаконченный обелиск",
+    "subtitle": "Монолит, который остался частью скалы",
+    "location": "Гранитные каменоломни Асуана",
+    "date": "XV век до н. э. · вероятно, время Хатшепсут",
+    "dateNote": "Новое царство; заказ Хатшепсут — вероятная атрибуция, не установленная подпись заказчика на завершённом памятнике.",
+    "highlights": [
+      {
+        "value": "≈42 м",
+        "label": "проектная высота",
+        "context": "Длина незавершённого монолита / предполагаемая высота после установки. Обелиск никогда не был поднят.",
+        "source": "obelisk-ministry"
+      },
+      {
+        "value": "≈1168 т",
+        "label": "расчётная масса",
+        "context": "Оценка Министерства для объекта, если бы его завершили. Это не масса реально перевезённого обелиска.",
+        "source": "obelisk-ministry"
+      },
+      {
+        "value": "Гранит",
+        "label": "единая заготовка",
+        "context": "Оставшийся в каменоломне незавершённый монолит.",
+        "source": "obelisk-ministry"
+      }
+    ],
+    "engineering": [
+      {
+        "title": "Сначала контур, затем отделение",
+        "text": "Окружающие выработки позволяют увидеть извлечение заготовки непосредственно из массива породы.",
+        "source": "obelisk-ngu"
+      },
+      {
+        "title": "Ударная обработка",
+        "text": "В каменоломнях найдены многочисленные долеритовые ударники. Следы угля, золы и обожжённого кирпича также указывают на роль нагрева на отдельных этапах добычи.",
+        "source": "obelisk-ngu"
+      },
+      {
+        "title": "Предел задаёт сам камень",
+        "text": "Трещины и дефекты породы привели к прекращению работ. Неудачный проект сохранил следы процесса, исчезающие на готовом монументе.",
+        "source": "obelisk-ministry"
+      }
+    ],
+    "established": "Заготовка осталась в скале. Добыча гранита и следы обработки доступны непосредственному изучению; проект остановили из-за дефектов камня.",
+    "unresolved": "Как распределялись разные приёмы обработки и трудозатраты? Опыт 2023 года измерял конкретную работу ударником; его скорость нельзя автоматически переносить на целую древнюю бригаду. Полный подъём именно этого обелиска — контрфактическая реконструкция.",
+    "diagram": {
+      "preferred": "План заготовки в каменоломне плюс поперечный разрез траншеи",
+      "labels": [
+        "Гранитный массив",
+        "Заготовка обелиска",
+        "Выработки по контуру",
+        "Трещина",
+        "Связь с материнской породой"
+      ],
+      "caveats": [
+        "Обелиск лежит горизонтально; вертикальное изображение допустимо только с подписью 'если бы был завершён'.",
+        "Не показывать, что его действительно транспортировали или установили.",
+        "Рисунок трещины условный, если он не основан на обмерной схеме.",
+        "Не утверждать, что доказано применение только долеритовых ударников или только нагрева."
+      ]
+    },
+    "sources": [
+      {
+        "id": "obelisk-ministry",
+        "title": "Министерство туризма и древностей Египта — The Unfinished Obelisk",
+        "url": "https://egymonuments.gov.eg/monuments/the-unfinished-obelisk/",
+        "supports": "Вероятная атрибуция Хатшепсут, трещины, около 42 м и расчётные 1168 т."
+      },
+      {
+        "id": "obelisk-ngu",
+        "title": "Kelany et al., Geological Survey of Norway, 2009 — Granite quarry survey in the Aswan region",
+        "url": "https://static.ngu.no/upload/Publikasjoner/Special%20publication/SP12_s87-98.pdf",
+        "supports": "Первичные обследования каменоломен, ударники, выработки, признаки применения огня."
+      },
+      {
+        "id": "obelisk-experiment",
+        "title": "The problems of the obelisk revisited, 2023",
+        "url": "https://doi.org/10.1016/j.daach.2023.e00284",
+        "supports": "Эксперимент с фотограмметрией: скорость конкретной ударной обработки, ограничения переноса результатов на древнюю стройку."
+      }
+    ],
+    "title": "<span class=\"long-title\">Незаконченный</span> <em>обелиск</em>",
+    "short": "Обелиск",
+    "place": "АСУАН",
+    "tagline": "Гигант, который так и не поднялся. Неудача каменотёсов сохранила редкий взгляд на сам процесс строительства.",
+    "footnote": "Вероятно, заказ времени Хатшепсут. Монолит остался в каменоломне.",
+    "facts": [
+      [
+        "≈ 42 м",
+        "длина заготовки"
+      ],
+      [
+        "≈ 1168 т",
+        "расчётная масса при завершении"
+      ]
+    ],
+    "points": [
+      {
+        "title": "Трещина меняет всё",
+        "kicker": "ПРЕДЕЛЫ МАТЕРИАЛА",
+        "text": "Работы прекратили из-за дефектов породы. Даже при огромных затратах труда камень нельзя считать однородным идеальным материалом. На нашем рисунке трещина обозначена условно, без претензии на точный обмер её конфигурации.",
+        "source": 0
+      },
+      {
+        "title": "Траншеи вокруг заготовки",
+        "kicker": "СЛЕДЫ КАМЕНОЛОМНИ",
+        "text": "Боковые выработки показывают, как заготовку выделяли из массива. В Асуанских каменоломнях найдены долеритовые ударники и свидетельства применения нагрева на отдельных этапах добычи. Разные техники могли сочетаться.",
+        "source": 1
+      },
+      {
+        "title": "Низ ещё связан со скалой",
+        "kicker": "НЕЗАВЕРШЁННОЕ ОТДЕЛЕНИЕ",
+        "text": "Обелиск не был полностью отделён, перевезён или установлен. Около 42 м — длина заготовки, а около 1168 т — оценка массы при завершении. Эти числа описывают незавершённый проект, а не документированный подъём такого груза.",
+        "source": 0
+      }
+    ],
+    "knownTitle": "Следы обработки остались на месте",
+    "knownText": "Заготовка лежит в материнском граните. Окружающие выработки и дефекты камня позволяют изучать процесс, следы которого обычно исчезают на готовом памятнике.",
+    "unknownTitle": "Как распределялись приёмы и труд?",
+    "unknownText": "Эксперименты помогают оценивать отдельные операции ударной обработки. Переносить скорость одного опыта на всю древнюю бригаду или реконструировать подъём именно этого обелиска без допущений нельзя.",
+    "researchLabel": "ЭКСПЕРИМЕНТАЛЬНАЯ АРХЕОЛОГИЯ / 2023",
+    "researchTitle": "Измерять работу, а не угадывать трудозатраты",
+    "researchText": "В исследовании обработки камня ударником применяли фотограмметрию, чтобы оценить снятый объём. Это измерение конкретной операции; полный древний технологический процесс остаётся более сложным.",
+    "process": [
+      [
+        "Разметить контур",
+        "Будущий монолит намечают непосредственно в гранитном массиве.",
+        "Следы добычи"
+      ],
+      [
+        "Углубить траншеи",
+        "Ударная обработка формирует пространство вдоль заготовки.",
+        "Следы и инструменты"
+      ],
+      [
+        "Проверить камень",
+        "Трещины ставят под угрозу целостность и дальнейшие операции.",
+        "Сохранившиеся дефекты"
+      ],
+      [
+        "Остановить проект",
+        "Заготовка остаётся соединённой со скалой; транспортировки не было.",
+        "Состояние памятника"
+      ]
+    ],
+    "recallQ": "Был ли груз массой около 1168 тонн здесь действительно поднят?",
+    "recallA": "Нет. Это расчётная масса обелиска при завершении. Заготовка осталась в каменоломне, не была полностью отделена и никогда не стояла вертикально.",
+    "time": "XV в. до н. э.",
+    "timeEra": "Вероятно, Хатшепсут",
+    "timeOrder": 3,
+    "disclaimer": "Учебная схема · обелиск лежит в скале · трещина показана условно"
+  }
+];
+</script><script>const svgDefs = `<defs><filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="gold-glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="pyramid-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#36764a" stop-opacity=".18"/><stop offset="1" stop-color="#14342d" stop-opacity=".06"/></linearGradient><pattern id="cut-hatch" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="11" stroke="#315a4a" stroke-width=".7"/></pattern><pattern id="water" width="35" height="15" patternUnits="userSpaceOnUse"><path d="M2 8q7-5 14 0t14 0" fill="none" stroke="#539ba9" stroke-width=".6"/></pattern></defs>`;
+const pt=p=>p.map(n=>Number(n).toFixed(1)).join(',');
+const poly=(ps,cls='wire',extra='')=>`<polygon points="${ps.map(pt).join(' ')}" class="${cls}" ${extra}/>`;
+const path=(ps,cls='wire',extra='')=>`<polyline points="${ps.map(pt).join(' ')}" class="${cls}" ${extra}/>`;
+const line=(a,b,cls='wire',extra='')=>`<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" class="${cls}" ${extra}/>`;
+const rect=(x,y,w,h,cls='stone-fill',extra='')=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" class="${cls}" ${extra}/>`;
+const txt=(x,y,s,cls='svg-label',extra='')=>`<text x="${x}" y="${y}" class="${cls}" ${extra}>${s}</text>`;
+function dim(a,b,label,offset=[0,-13]){const dx=b[0]-a[0],dy=b[1]-a[1],len=Math.hypot(dx,dy);const nx=-dy/len*5,ny=dx/len*5;return line(a,b,'amber-line')+line([a[0]-nx,a[1]-ny],[a[0]+nx,a[1]+ny],'amber-line')+line([b[0]-nx,b[1]-ny],[b[0]+nx,b[1]+ny],'amber-line')+txt((a[0]+b[0])/2+offset[0],(a[1]+b[1])/2+offset[1],label,'svg-dim','text-anchor="middle"');}
+const iso=(x,y,z=0)=>[500+(x-y)*.88,230+(x+y)*.32-z*.94];
+function box(x,y,z,w,d,h,classes=['stone-side','stone-fill','stone-top']){let a=iso(x,y,z),b=iso(x+w,y,z),c=iso(x+w,y+d,z),e=iso(x,y+d,z),A=iso(x,y,z+h),B=iso(x+w,y,z+h),C=iso(x+w,y+d,z+h),E=iso(x,y+d,z+h);return poly([e,c,C,E],classes[0])+poly([b,c,C,B],classes[1])+poly([A,B,C,E],classes[2]);}
+function floorGrid(){let s='';for(let v=-70;v<=520;v+=40){s+=line(iso(-70,v,-8),iso(520,v,-8),'wire dim');s+=line(iso(v,-70,-8),iso(v,520,-8),'wire dim');}return `<g opacity=".5">${s}</g>`;}
+function pyramidVolume(kind){const h=kind==='bent'?243:kind==='djoser'?215:260;let s=floorGrid();if(kind==='djoser'){for(let i=0;i<6;i++){const m=i*27;s+=box(m,m,i*35,400-m*2,400-m*2,35);for(let j=1;j<4;j++){let z=i*35+j*8;s+=path([iso(m,400-m,z),iso(400-m,400-m,z),iso(400-m,m,z)],'wire soft');}}s+=dim(iso(430,20,0),iso(430,20,h),'≈ 60 м',[45,0]);return s;}
+const apex=iso(200,200,h),l=iso(0,400),f=iso(400,400),r=iso(400,0),back=iso(0,0);s+=path([l,back,r],'wire hidden-line');
+function slice(t,z){return [iso(200*(1-t),200+200*t,z),iso(200+200*t,200+200*t,z),iso(200+200*t,200*(1-t),z)];}
+if(kind==='bent'){const k=.58,z=123,sl=slice(k,z);s+=poly([apex,sl[0],l,f,sl[1]],'stone-side');s+=poly([apex,sl[1],f,r,sl[2]],'stone-fill');s+=path([l,sl[0],apex,sl[2],r,f,l],'wire bright');s+=path([apex,sl[1],f],'wire');for(let z1=10;z1<243;z1+=9){let t=z1<123?1-(1-k)*z1/123:k*(1-(z1-123)/120);s+=path(slice(t,z1),'wire soft');}s+=path(sl,'amber-line');s+=txt(128,305,'54° → 43°','svg-dim');s+=line([232,309],sl[0],'amber-line hidden-line');s+=dim(iso(443,0,0),iso(443,0,h),'≈ 105 м',[42,0]);}
+else{s+=poly([apex,l,f],'stone-side');s+=poly([apex,f,r],'stone-fill','fill="url(#pyramid-face)"');for(let z=7;z<h;z+=7){s+=path(slice(1-z/h,z),'wire soft');}for(let course=1;course<27;course+=2){let z=course*8,t=1-z/h,t2=1-(z+8)/h;for(let j=1;j<9;j++){let u=j/9;let x=200*(1-t)+400*t*u,x2=200*(1-t2)+400*t2*u;s+=line(iso(x,200+200*t,z),iso(x2,200+200*t2,z+8),'wire dim');let y=200*(1-t)+400*t*u,y2=200*(1-t2)+400*t2*u;s+=line(iso(200+200*t,y,z),iso(200+200*t2,y2,z+8),'wire dim');}}s+=path([l,apex,r,f,l],'wire bright');s+=line(apex,f,'wire bright');s+=dim(iso(460,0,0),iso(460,0,h),'146,5 м',[47,0]);s+=dim(iso(0,443,0),iso(400,443,0),'≈ 230 м',[0,26]);s+=txt(134,144,'ГЕОМЕТРИЯ МАССЫ','svg-small');s+=path([[150,156],[230,156],[apex[0]-20,apex[1]+40]],'wire dim');}
+s+=txt(725,584,'АКСОНОМЕТРИЯ','svg-small');return s;}
+function pyramidSection(kind){let s='';if(kind==='djoser'){const base=540;let shape=[[140,base],[140,484],[197,484],[197,428],[254,428],[254,372],[311,372],[311,316],[368,316],[368,260],[632,260],[632,316],[689,316],[689,372],[746,372],[746,428],[803,428],[803,484],[860,484],[860,base]];s+=poly(shape,'stone-fill');s+=poly(shape,'wire','fill="url(#cut-hatch)"');s+=line([100,base],[900,base],'wire bright');s+=rect(464,540,72,72,'amber-fill')+rect(493,435,14,105,'amber-fill');s+=path([[390,546],[390,584],[465,584]],'amber-line');s+=path([[536,584],[670,584],[670,553],[805,553]],'amber-line');s+=txt(80,105,'СТУПЕНЧАТАЯ ПИРАМИДА','svg-label')+txt(80,128,'ПОДЗЕМНАЯ ЧАСТЬ ПОКАЗАНА УСЛОВНО','svg-small');s+=dim([922,260],[922,540],'≈ 60 м',[-46,0]);return s;}
+let a=[500,94],l=[110,526],r=[890,526];if(kind==='bent'){let outline=[[130,526],[280,283],[500,130],[720,283],[870,526]];s+=poly(outline,'stone-fill')+poly(outline,'wire','fill="url(#cut-hatch)"');s+=path([[255,325],[385,532],[460,532],[460,480],[490,457],[520,480],[520,532],[570,532],[610,491],[630,478],[650,491],[650,519],[742,383]],'amber-line','stroke-width="4"');s+=line([280,283],[720,283],'wire hidden-line');s+=txt(160,250,'СМЕНА УГЛА','svg-dim');s+=txt(640,590,'2 СИСТЕМЫ ПОМЕЩЕНИЙ','svg-small');s+=txt(80,90,'СОВМЕЩЁННАЯ СХЕМА','svg-label');s+=txt(80,113,'ХОДЫ РАЗНЫХ ОРИЕНТАЦИЙ СВЕДЕНЫ В ОДНУ ПЛОСКОСТЬ','svg-small');return s;}
+s+=poly([a,l,r],'stone-fill');s+=poly([a,l,r],'wire','fill="url(#cut-hatch)"');for(let y=114;y<526;y+=13){let t=(y-94)/432;s+=line([500-390*t,y],[500+390*t,y],'wire dim');}
+s+=rect(90,526,810,63,'stone-side');s+=line([90,526],[910,526],'wire bright');s+=path([[170,464],[463,574],[557,574]],'amber-line','stroke-width="5"');s+=path([[258,503],[374,450]],'amber-line','stroke-width="4"');s+=path([[374,450],[516,386],[574,386]],'amber-line','stroke-width="8"');s+=path([[374,450],[492,460]],'amber-line','stroke-width="4"');s+=rect(490,448,36,23,'amber-fill');s+=rect(574,382,65,27,'amber-fill');for(let i=0;i<5;i++){s+=rect(565,370-i*10,82,6,'stone-top');}s+=path([[556,322],[606,299],[657,322]],'wire bright');s+=rect(550,565,55,26,'amber-fill');s+=path([[575,395],[266,354]],'wire');s+=path([[638,395],[787,412]],'wire');s+=path([[491,456],[298,435]],'wire soft');s+=path([[526,456],[712,479]],'wire soft');
+s+=poly([[389,383],[404,363],[518,314],[533,332]],'amber-fill','stroke-dasharray="5 5"');s+=rect(182,457,31,11,'amber-fill');s+=txt(100,83,'СЕВЕР — ЮГ','svg-label');s+=txt(100,107,'ВНУТРЕННИЕ ПУТИ УПРОЩЕНЫ','svg-small');s+=txt(644,241,'BIG VOID · ≥ 30 м','svg-dim');s+=path([[641,253],[581,253],[508,324]],'amber-line hidden-line');s+=txt(685,323,'РАЗГРУЗОЧНЫЕ КАМЕРЫ','svg-small');s+=path([[679,329],[637,352]],'wire soft');s+=txt(30,416,'КОРИДОР 2023','svg-small');s+=path([[126,425],[158,448],[190,461]],'wire soft');s+=txt(688,561,'МАТЕРИКОВАЯ СКАЛА','svg-small');s+=txt(100,621,'ПОЛОСТЬ: ЕЁ НАЛИЧИЕ УСТАНОВЛЕНО, НАЗНАЧЕНИЕ НЕИЗВЕСТНО','svg-small');return s;}
+function pyramidPlan(kind){let s=rect(270,106,460,460,'stone-fill')+rect(286,122,428,428,'wire soft');if(kind==='djoser'){for(let i=1;i<=5;i++)s+=rect(270+i*29,106+i*29,460-i*58,460-i*58,'wire');s+=rect(474,310,52,52,'amber-fill');s+=path([[500,130],[500,310]],'amber-line hidden-line');s+=txt(765,185,'6 ЯРУСОВ','svg-dim');s+=line([734,190],[700,209],'amber-line');}
+else{s+=path([[270,106],[730,566]],'wire soft')+path([[730,106],[270,566]],'wire soft');s+=rect(430,266,140,140,'wire hidden-line');s+=path([[532,106],[532,262],[528,324],[565,375]],'amber-line','stroke-width="3"');s+=rect(550,366,54,29,'amber-fill')+rect(500,318,43,27,'amber-fill');if(kind==='bent'){s+=rect(373,209,254,254,'amber-line');s+=path([[270,355],[443,355],[497,372]],'amber-line');}s+=dim([270,604],[730,604],kind==='bent'?'≈ 188 м':'≈ 230 м',[0,23]);}
+s+=line([175,225],[175,145],'wire bright')+path([[165,160],[175,144],[185,160]],'wire bright')+txt(175,127,'N','svg-label','text-anchor="middle"');s+=txt(70,58,'ПЛАН / ПРОЕКЦИЯ','svg-label');s+=txt(70,82,kind==='djoser'?'ЯРУСЫ И ОСНОВНОЙ ПОДЗЕМНЫЙ СТВОЛ':'ХОДЫ РАЗНОЙ ВЫСОТЫ ПОКАЗАНЫ СОВМЕСТНО','svg-small');return s;}
+function osireionVolume(){let s=floorGrid();s+=box(-30,0,-28,460,360,20);s+=box(0,0,0,400,28,100);s+=box(0,0,0,25,290,100);s+=box(360,0,0,25,290,35);s+=box(70,70,0,270,230,17);s+=poly([iso(30,30,1),iso(359,30,1),iso(359,322,1),iso(30,322,1)],'wire soft','fill="#29536b19"');for(let y of [75,170])for(let x=92;x<=300;x+=51){s+=box(x,y,17,32,42,105);}for(let y of [74,170])s+=box(88,y,122,250,46,21);s+=path([iso(90,68,173),iso(215,68,210),iso(340,68,173)],'wire hidden-line');s+=txt(88,125,'ОСИРИОН / ЦЕНТРАЛЬНЫЙ ЗАЛ','svg-label');s+=txt(88,151,'КРЫША УСЛОВНО СНЯТА','svg-small');s+=txt(685,492,'ГРАНИТНЫЕ ПИЛОНЫ','svg-small');s+=path([[676,481],[621,411],[600,382]],'wire soft');return s;}
+function osireionPlan(){let s=rect(190,115,620,425,'stone-fill')+rect(220,145,560,365,'wire');s+=rect(242,169,516,317,'stone-side','fill="url(#water)"');s+=rect(296,220,408,214,'stone-top');for(let x=325;x<=645;x+=80){s+=rect(x,237,38,54,'amber-fill')+rect(x,362,38,54,'amber-fill');}for(let y=173;y<454;y+=65){s+=rect(167,y,55,35,'stone-fill')+rect(780,y,55,35,'stone-fill');}s+=rect(462,83,76,62,'stone-fill')+rect(462,510,76,69,'stone-fill');s+=path([[493,82],[493,33],[106,33],[106,343],[165,343]],'wire');s+=txt(63,610,'КАНАЛ ВОКРУГ ЦЕНТРАЛЬНОЙ ПЛАТФОРМЫ','svg-label');s+=txt(710,88,'10 ПИЛОНОВ','svg-dim');return s;}
+function osireionSection(){let s=rect(85,530,830,60,'stone-side');s+=rect(120,262,60,268)+rect(820,262,60,268);s+=rect(239,480,520,50,'stone-top');s+=rect(180,518,59,37,'wire','fill="url(#water)"')+rect(759,518,61,37,'wire','fill="url(#water)"');s+=rect(300,305,87,175)+rect(613,305,87,175);s+=rect(282,272,123,33,'stone-top')+rect(595,272,123,33,'stone-top');s+=path([[150,262],[500,132],[850,262]],'wire hidden-line');s+=path([[150,284],[500,153],[850,284]],'wire hidden-line');s+=txt(92,81,'ПОПЕРЕЧНЫЙ РАЗРЕЗ / ПРИНЦИП','svg-label');s+=txt(92,106,'ВЕРХНЕЕ ПЕРЕКРЫТИЕ ПОКАЗАНО УСЛОВНО','svg-small');s+=txt(392,603,'ОСТРОВ И ОКРУЖАЮЩИЙ КАНАЛ','svg-small');return s;}
+function serapeumVolume(){let s=floorGrid();s+=box(-25,-40,-20,460,420,18);s+=box(0,0,0,380,36,82);s+=box(0,0,0,38,300,82);for(let x of [55,220]){s+=box(x,100,0,130,120,15);s+=box(x+7,110,15,115,97,66);s+=poly([iso(x+18,122,83),iso(x+108,122,83),iso(x+108,195,83),iso(x+18,195,83)],'stone-side');s+=box(x+2,102,113,125,112,20);s+=path([iso(x+2,102,93),iso(x+2,102,112)],'amber-line hidden-line');}s+=txt(89,103,'ПОДЗЕМНЫЕ ГАЛЕРЕИ','svg-label');s+=txt(89,129,'КАМЕРЫ УСЛОВНО ОТКРЫТЫ. КРЫШКИ ПРИПОДНЯТЫ','svg-small');s+=txt(713,520,'КАМЕННЫЕ САРКОФАГИ','svg-small');return s;}
+function serapeumPlan(){let s=rect(120,291,770,68,'stone-side');for(let x=190;x<820;x+=138){s+=rect(x,175,100,116);s+=rect(x+22,202,58,62,'amber-fill');s+=rect(x,359,100,116);s+=rect(x+22,386,58,62,'amber-fill');s+=rect(x+38,277,24,28,'stone-side');s+=rect(x+38,347,24,28,'stone-side');}s+=path([[110,324],[858,324]],'amber-line hidden-line');s+=txt(100,94,'ПРИНЦИП ГАЛЕРЕЙНОЙ ПЛАНИРОВКИ','svg-label');s+=txt(100,123,'ЧИСЛО И РАСПОЛОЖЕНИЕ КАМЕР УСЛОВНЫ','svg-small');s+=txt(325,546,'ОСЬ ДОСТАВКИ И БОКОВЫЕ КАМЕРЫ','svg-dim');return s;}
+function serapeumSection(){let s=rect(120,154,760,400,'stone-side','fill="url(#cut-hatch)"');s+=path([[173,490],[173,299],[222,229],[778,229],[829,299],[829,490]],'wire bright');s+=rect(245,462,510,28,'stone-top');s+=poly([[296,447],[296,320],[352,320],[352,397],[648,397],[648,320],[704,320],[704,447]],'stone-fill');s+=rect(281,266,438,39,'amber-fill');s+=line([298,305],[298,320],'amber-line hidden-line');s+=txt(100,91,'МОНОЛИТНЫЙ КАМЕННЫЙ ЯЩИК','svg-label');s+=txt(100,118,'КРЫШКА ПОКАЗАНА ОТДЕЛЬНО ДЛЯ ЧИТАЕМОСТИ','svg-small');s+=txt(349,599,'ВЫСЕЧЕННАЯ В СКАЛЕ КАМЕРА','svg-small');return s;}
+function obeliskVolume(){let s=floorGrid();s+=box(-70,0,-35,560,330,28);s+=box(-50,30,-8,475,36,22);s+=box(-50,170,-8,475,65,22);s+=box(-60,50,-8,45,140,30);s+=box(30,83,-6,327,74,57);s+=poly([iso(357,83,51),iso(410,120,43),iso(357,157,51)],'stone-top');s+=poly([iso(357,157,51),iso(410,120,43),iso(410,120,-6),iso(357,157,-6)],'stone-side');s+=path([iso(180,85,52),iso(205,103,52),iso(199,120,52),iso(231,141,52),iso(221,157,52)],'amber-line');s+=dim(iso(30,270,10),iso(411,270,10),'≈ 42 м',[0,28]);s+=txt(78,90,'НЕЗАКОНЧЕННЫЙ ОБЕЛИСК','svg-label');s+=txt(78,115,'ЛЕЖИТ В МАТЕРИНСКОЙ ПОРОДЕ','svg-small');return s;}
+function obeliskPlan(){let s=rect(98,190,802,276,'stone-side','fill="url(#cut-hatch)"');s+=poly([[157,233],[776,249],[856,328],[776,407],[157,423]],'stone-top');s+=poly([[183,259],[769,278],[820,328],[769,378],[183,397]],'stone-fill');s+=path([[477,269],[493,294],[488,329],[510,358],[505,386]],'amber-line','stroke-width="2"');s+=dim([182,494],[820,494],'≈ 42 м',[0,25]);s+=txt(100,106,'ВИД СВЕРХУ / КАМЕНОЛОМНЯ АСУАНА','svg-label');s+=txt(100,135,'БОКОВЫЕ ТРАНШЕИ И ТРЕЩИНА ПОКАЗАНЫ СХЕМАТИЧНО','svg-small');return s;}
+function obeliskSection(){let s=rect(100,185,800,362,'stone-side','fill="url(#cut-hatch)"');s+=poly([[110,265],[307,265],[307,425],[365,425],[365,275],[635,275],[635,425],[693,425],[693,265],[890,265],[890,548],[110,548]],'stone-fill');s+=rect(365,275,270,210,'stone-top');s+=line([365,485],[635,485],'amber-line hidden-line');s+=txt(101,85,'ПОПЕРЕЧНЫЙ РАЗРЕЗ / ПРИНЦИП','svg-label');s+=txt(101,113,'НИЖНЯЯ ПОВЕРХНОСТЬ НЕ ОТДЕЛЕНА ОТ СКАЛЫ','svg-small');s+=txt(373,598,'МАТЕРИНСКИЙ ГРАНИТ','svg-dim');s+=path([[500,582],[500,530]],'amber-line');return s;}
+function drawMonument(id,view){if(['khufu','bent','djoser'].includes(id)){return view==='volume'?pyramidVolume(id):view==='section'?pyramidSection(id):pyramidPlan(id);}if(id==='osireion')return view==='volume'?osireionVolume():view==='section'?osireionSection():osireionPlan();if(id==='serapeum')return view==='volume'?serapeumVolume():view==='section'?serapeumSection():serapeumPlan();return view==='volume'?obeliskVolume():view==='section'?obeliskSection():obeliskPlan();}
+const hotspotPositions={khufu:{volume:[[330,395],[585,319],[515,170]],section:[[605,396],[450,414],[474,346]],plan:[[585,380],[534,285],[510,220]]},osireion:{volume:[[566,286],[408,387],[431,182]],section:[[342,380],[213,527],[500,157]],plan:[[505,265],[268,332],[495,112]]},bent:{volume:[[397,302],[595,363],[419,434]],section:[[720,283],[503,516],[262,336]],plan:[[627,330],[574,380],[282,355]]},djoser:{volume:[[503,244],[507,428],[340,396]],section:[[640,328],[500,578],[500,454]],plan:[[632,234],[500,338],[500,192]]},serapeum:{volume:[[537,296],[405,355],[659,357]],section:[[489,419],[505,284],[209,247]],plan:[[380,234],[521,412],[729,328]]},obelisk:{volume:[[577,294],[592,400],[434,321]],section:[[500,345],[669,386],[500,490]],plan:[[499,327],[265,245],[796,351]]}};
+function miniDiagram(id){let shape='';if(id==='khufu')shape='<path d="M13 64 82 9l69 55-69 18L13 64Zm69-55v73M13 64l69-9 69 9M28 51l54 17 55-17M44 38l38 13 39-13M61 24l21 9 22-9"/>';else if(id==='bent')shape='<path d="m14 67 25-34L82 10l43 23 25 34-68 14L14 67Zm68-57v71M39 33l43 14 43-14M14 67l68-17 68 17"/>';else if(id==='djoser')shape='<path d="m14 68 68 15 68-15V56l-10-3V42l-13-4V28l-14-3V15L82 8 51 15v10l-14 3v10l-13 4v11l-10 3v12Zm68 15V69m-58-16 58 14 58-14M37 38l45 12 45-12M51 25l31 8 31-8M51 15l31 8 31-8M82 23v10m0 17V38"/>';else if(id==='osireion')shape='<path d="m12 63 70 23 71-23-71-24-70 24Zm17-3V23l23-6 29 9 22-7 29 9v38M29 23l24 9v39M53 32l29-7v46m22-51v45m28-37-27 9v32M82 26l24 11M37 25v34m23-27v32m52-27v25"/>';else if(id==='serapeum')shape='<path d="m18 50 70 25 56-18v-30L75 5 18 22v28Zm0-28 70 23 56-18M88 45v30M33 28v17l47 16V45M34 22 83 37l44-12-49-16-44 13Zm-16 47 70 19 56-20"/>';else shape='<path d="m9 58 126-34 22 7-8 18L24 82 9 74V58Zm0 0 15 8 125-35M24 66v16M78 40l7 7-3 4 11 7M5 82l20 8 135-36M2 44 128 12l32 9"/>';return `<svg class="mini-diagram" viewBox="0 0 164 95" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.05" stroke-linejoin="round" color="#73d7b8">${shape}</g></svg>`;}
+</script><script>(() => {
+  'use strict';
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  const state={id:'khufu',view:'volume',point:0,zoom:1,expanded:false};
+  const views={volume:'ПРОСТРАНСТВЕННАЯ СХЕМА',section:'АРХИТЕКТУРНЫЙ РАЗРЕЗ',plan:'ПЛАН И ПРОЕКЦИИ'};
+  let previousFocus=null;
+  const current=()=>MONUMENTS.find(m=>m.id===state.id);
+  const setText=(id,t)=>{$(id).textContent=t;};
+  function syncURL(){const url=new URL(location.href);url.searchParams.set('object',state.id);url.searchParams.set('view',state.view);try{history.replaceState(null,'',url);}catch{}}
+  function draw(){const m=current();const spots=hotspotPositions[state.id][state.view].map((p,i)=>`<g class="hotspot ${state.point===i?'active':''}" data-point="${i}" role="button" tabindex="0" aria-label="${i+1}. ${m.points[i].title}" aria-pressed="${state.point===i}"><circle cx="${p[0]}" cy="${p[1]}" r="30" class="hotspot-hit"/><circle cx="${p[0]}" cy="${p[1]}" r="23" class="hotspot-halo"/><circle cx="${p[0]}" cy="${p[1]}" r="15" class="hotspot-ring"/><text x="${p[0]}" y="${p[1]}">${String(i+1).padStart(2,'0')}</text></g>`).join('');
+    $('#main-drawing').innerHTML=`<title>${m.name}: ${views[state.view].toLowerCase()}</title><desc>${m.disclaimer}. Три интерактивные точки открывают пояснения под чертежом.</desc>${svgDefs}<g class="diagram-content" style="transform:scale(${state.zoom})">${drawMonument(state.id,state.view)}${spots}</g>`;
+    $('#main-drawing').setAttribute('aria-label',`${m.name} — ${views[state.view].toLowerCase()}`);
+    setText('#drawing-heading',views[state.view]);setText('#drawing-disclaimer',m.disclaimer);setText('#zoom-reset',`${Math.round(state.zoom*100)}%`);
+    $('#zoom-out').disabled=state.zoom<=.8;$('#zoom-in').disabled=state.zoom>=1.6;
+    $$('.view-switch button').forEach(b=>{const a=b.dataset.view===state.view;b.classList.toggle('active',a);b.setAttribute('aria-pressed',a);});
+    $$('.hotspot').forEach(el=>{el.addEventListener('click',()=>selectPoint(+el.dataset.point,true));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectPoint(+el.dataset.point,true);}});});
+  }
+  function selectPoint(n,fromDrawing=false){state.point=n;const m=current(),p=m.points[n];$$('.point-button').forEach((b,i)=>{b.classList.toggle('active',i===n);b.setAttribute('aria-pressed',i===n);});$$('.hotspot').forEach((b,i)=>{b.classList.toggle('active',i===n);b.setAttribute('aria-pressed',i===n);});
+    $('#point-detail').innerHTML=`<span class="eyebrow">${p.kicker}</span><h3>${p.title}</h3><p>${p.text}</p><a class="detail-source" href="${m.sources[p.source].url}" target="_blank" rel="noopener noreferrer">Археологический источник ↗</a>`;
+    if(fromDrawing){if(state.expanded)toggleExpand(false);$('#details').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}
+  }
+  function renderRail(){const rail=$('#monument-rail');rail.innerHTML=MONUMENTS.map((m,i)=>`<button class="monument-card ${m.id===state.id?'selected':''}" data-id="${m.id}" aria-label="${m.name}" aria-pressed="${m.id===state.id}"><span class="card-index">${String(i+1).padStart(2,'0')} /</span>${miniDiagram(m.id)}<span class="card-name">${m.name}</span><span class="card-place">${m.place}</span></button>`).join('');$$('.monument-card').forEach(b=>b.addEventListener('click',()=>selectMonument(b.dataset.id)));}
+  function renderTimeline(){$('#timeline-items').innerHTML=[...MONUMENTS].sort((a,b)=>a.timeOrder-b.timeOrder).map(m=>`<button class="timeline-item ${m.id===state.id?'active':''}" data-id="${m.id}" aria-label="${m.name}: ${m.time}"><span class="timeline-date">${m.time}</span><span class="timeline-node"></span><span class="timeline-name">${m.name}</span><span class="timeline-era">${m.timeEra}</span></button>`).join('');$$('.timeline-item').forEach(b=>b.addEventListener('click',()=>selectMonument(b.dataset.id,true)));}
+  function selectMonument(id,scroll=false){if(!MONUMENTS.some(m=>m.id===id))return;state.id=id;state.point=0;state.zoom=1;const m=current();
+    setText('#object-number',`${String(MONUMENTS.indexOf(m)+1).padStart(2,'0')} / 06`);setText('#object-location',m.location);$('#object-title').innerHTML=m.title;setText('#object-tagline',m.tagline);setText('#object-era',m.date);setText('#hero-footnote',m.footnote);
+    $('#hero-facts').innerHTML=m.facts.map(f=>`<div class="hero-fact"><strong>${f[0]}</strong><span>${f[1]}</span></div>`).join('');
+    $('#point-list').innerHTML=m.points.map((p,i)=>`<button class="point-button ${i===0?'active':''}" data-point="${i}" aria-pressed="${i===0}"><span>${String(i+1).padStart(2,'0')}</span>${p.title}</button>`).join('');
+    $$('.point-button').forEach(b=>b.addEventListener('click',()=>selectPoint(+b.dataset.point)));
+    ['known-title','known-text','unknown-title','unknown-text','research-label','research-title','research-text'].forEach(key=>setText('#'+key,m[key.replace(/-([a-z])/g,(_,l)=>l.toUpperCase())]));
+    $('#process-grid').innerHTML=m.process.map((p,i)=>`<article class="process-step"><span class="process-num">0${i+1}</span><h3>${p[0]}</h3><p>${p[1]}</p><small>${p[2]}</small></article>`).join('');
+    setText('#recall-question',m.recallQ);setText('#recall-answer',m.recallA);$('#recall-answer').hidden=true;$('#recall-button').setAttribute('aria-expanded','false');$('#recall-button').innerHTML='Показать ответ <span>+</span>';
+    draw();selectPoint(0);renderRail();renderTimeline();syncURL();document.title=`${m.name} · KEMET — Архитектура вечности`;
+    if(scroll||matchMedia('(max-width: 600px)').matches){$('#atlas').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}else{$('#main-drawing').classList.remove('drawing-enter');requestAnimationFrame(()=>$('#main-drawing').classList.add('drawing-enter'));}
+  }
+  function openDialog(dialog){if(state.expanded)toggleExpand(false);previousFocus=document.activeElement;dialog.showModal();document.body.style.overflow='hidden';}
+  function closeDialog(dialog){dialog.close();document.body.style.overflow='';previousFocus?.focus();}
+  function sources(){const ordered=[current(),...MONUMENTS.filter(m=>m.id!==state.id)];$('#sources-list').innerHTML=ordered.map(m=>`<section class="source-group"><h3>${m.name}</h3>${m.sources.map(s=>`<a class="source-link" href="${s.url}" target="_blank" rel="noopener noreferrer"><strong>${s.title} ↗</strong><span>${s.supports}</span></a>`).join('')}</section>`).join('');openDialog($('#sources-dialog'));}
+  function toggleExpand(force){state.expanded=typeof force==='boolean'?force:!state.expanded;$('#drawing-card').classList.toggle('is-expanded',state.expanded);$('#expand-drawing').setAttribute('aria-label',state.expanded?'Свернуть чертёж':'Развернуть чертёж');$('#expand-drawing').setAttribute('aria-expanded',state.expanded);document.body.style.overflow=state.expanded?'hidden':'';if(state.expanded){previousFocus=document.activeElement;$('#drawing-card').setAttribute('role','dialog');$('#drawing-card').setAttribute('aria-modal','true');$('#drawing-card').setAttribute('aria-label','Развёрнутый чертёж');$('.site-header').inert=true;$$('main>section:not(.atlas),footer,.atlas-intro,.hero-copy,.collection-heading,.monument-rail').forEach(el=>el.inert=true);$('#expand-drawing').focus();}else{$('#drawing-card').removeAttribute('role');$('#drawing-card').removeAttribute('aria-modal');$('.site-header').inert=false;$$('main>section:not(.atlas),footer,.atlas-intro,.hero-copy,.collection-heading,.monument-rail').forEach(el=>el.inert=false);previousFocus?.focus();}}
+  $$('.view-switch button').forEach(b=>b.addEventListener('click',()=>{state.view=b.dataset.view;state.zoom=1;draw();syncURL();}));
+  $('#zoom-in').addEventListener('click',()=>{state.zoom=Math.min(1.6,+(state.zoom+.2).toFixed(1));draw();});$('#zoom-out').addEventListener('click',()=>{state.zoom=Math.max(.8,+(state.zoom-.2).toFixed(1));draw();});$('#zoom-reset').addEventListener('click',()=>{state.zoom=1;draw();});
+  $('#expand-drawing').addEventListener('click',()=>toggleExpand());document.addEventListener('keydown',e=>{if(e.key==='Escape'&&state.expanded){toggleExpand(false);}if(e.key==='Tab'&&state.expanded){const focusable=[...$('#drawing-card').querySelectorAll('button:not(:disabled),[tabindex="0"]')],first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
+  $('#recall-button').addEventListener('click',()=>{const expanded=$('#recall-button').getAttribute('aria-expanded')==='true';$('#recall-button').setAttribute('aria-expanded',!expanded);$('#recall-answer').hidden=expanded;$('#recall-button').innerHTML=expanded?'Показать ответ <span>+</span>':'Скрыть ответ <span>−</span>';});
+  $$('.sources-trigger').forEach(b=>b.addEventListener('click',sources));$('#about-button').addEventListener('click',()=>openDialog($('#about-dialog')));
+  $$('dialog').forEach(dialog=>{dialog.querySelector('.close-dialog').addEventListener('click',()=>closeDialog(dialog));dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog(dialog);}});dialog.addEventListener('cancel',()=>{document.body.style.overflow='';});});
+  if($('#qr-button'))$('#qr-button').addEventListener('click',()=>openDialog($('#qr-dialog')));
+  if($('#copy-link'))$('#copy-link').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('https://evgk724.github.io/kemet-atlas/');$('#toast').textContent='Ссылка скопирована';}catch{$('#toast').textContent='Ссылка указана под QR-кодом';}$('#toast').classList.add('show');setTimeout(()=>$('#toast').classList.remove('show'),2500);});
+  const params=new URLSearchParams(location.search);if(['volume','section','plan'].includes(params.get('view')))state.view=params.get('view');const initial=params.get('object');selectMonument(MONUMENTS.some(m=>m.id===initial)?initial:'khufu');
+})();
+</script>
+</body>
+</html>
