@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta name="atlas-app" content="kemet"><meta name="atlas-version" content="__APP_RELEASE__"><meta name="atlas-built" content="__APP_BUILT__">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e13">
+  <meta name="application-name" content="KEMET">
+  <meta name="apple-mobile-web-app-title" content="KEMET">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32-v2.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/kemet-icon-192-v2.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-v2.png">
+  <link rel="manifest" href="site.webmanifest?v=2">
+  <meta name="description" content="Интерактивный архитектурный атлас Древнего Египта. Шесть сооружений, авторские чертежи и археологические свидетельства.">
+  <title>KEMET — Архитектура вечности</title>
+  <script>document.documentElement.dataset.textSize='large';try{const s=localStorage.getItem('kemet-text-size');if(['normal','large','xlarge'].includes(s))document.documentElement.dataset.textSize=s;}catch{}</script>
+  <style>/*__CSS__*/</style>
+</head>
+<body>
+<a class="skip-link" href="#atlas">Перейти к атласу</a>
+<header class="site-header">
+  <a class="brand" href="#atlas" aria-label="KEMET — главная"><img class="app-icon" src="__APP_ICON_DATA__" width="54" height="54" alt=""><span>KEMET<small>АРХИТЕКТУРА ВЕЧНОСТИ</small></span></a>
+  <nav class="top-nav" aria-label="Основная навигация"><a href="#atlas" class="active">Атлас сооружений</a><a href="#timeline">Линия времени</a><button type="button" id="about-button">Об атласе <span>↗</span></button><button type="button" id="qr-button" aria-label="Открыть QR-код приложения">QR <span>⌗</span></button></nav>
+  <span class="header-mark"><i></i> ЕГИПЕТ · 6 ОБЪЕКТОВ</span>
+</header>
+<main>
+  <div class="reading-controls"><label for="text-size"><b aria-hidden="true">Aa</b> Размер текста</label><select id="text-size"><option value="normal">Крупный</option><option value="large" selected>Очень крупный</option><option value="xlarge">Максимальный</option></select></div>
+  <section id="atlas" class="atlas" aria-label="Атлас сооружений">
+    <div class="atlas-intro"><span class="eyebrow"><span class="tiny-star">✦</span> КАМЕНЬ. ГЕОМЕТРИЯ. НЕИЗВЕСТНОЕ.</span><span class="intro-note">Путешествие в инженерную мысль древности</span></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="location-line"><span id="object-number">01 / 06</span><span class="dash"></span><span id="object-location"></span></div>
+        <h1 id="object-title"></h1>
+        <p id="object-tagline" class="hero-tagline"></p>
+        <div class="era"><span class="era-icon">◷</span><span id="object-era"></span></div>
+        <div class="hero-facts" id="hero-facts"></div>
+        <a href="#details" class="explore-button">Внутри сооружения <span>↘</span></a>
+        <p class="hero-footnote" id="hero-footnote"></p>
+      </div>
+      <div class="drawing-card" id="drawing-card">
+        <div class="drawing-top"><span><i></i> <span id="drawing-heading">ПРОСТРАНСТВЕННАЯ СХЕМА</span></span><button class="icon-button" id="expand-drawing" type="button" aria-label="Развернуть чертёж" title="Развернуть чертёж"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div>
+        <div class="drawing-stage" id="drawing-stage"><svg id="main-drawing" viewBox="0 0 1000 650" role="group" aria-label="Архитектурная схема"></svg></div>
+        <div class="drawing-notes" id="drawing-notes" aria-label="Подписи к чертежу"></div>
+        <div class="drawing-legend"><span><i class="legend-line"></i> конструкция</span><span><i class="legend-dot"></i> изучить деталь</span><span class="compass">◇ СХЕМА</span></div>
+        <div class="drawing-bottom"><div class="view-switch" role="group" aria-label="Вид чертежа"><button data-view="volume" class="active" aria-pressed="true">Объём</button><button data-view="section" aria-pressed="false">Разрез</button><button data-view="plan" aria-pressed="false">План</button></div><div class="zoom-control"><button id="zoom-out" type="button" aria-label="Уменьшить чертёж">−</button><button id="zoom-reset" type="button" aria-label="Сбросить масштаб">100%</button><button id="zoom-in" type="button" aria-label="Увеличить чертёж">+</button></div></div>
+        <p class="drawing-disclaimer" id="drawing-disclaimer">Учебная схема · не обмерный чертёж</p>
+      </div>
+    </div>
+    <div class="collection-heading"><h2>Шесть взглядов на невозможное</h2><span>ВЫБЕРИТЕ СООРУЖЕНИЕ <span>↓</span></span></div>
+    <div class="monument-rail" id="monument-rail" role="group" aria-label="Выбор сооружения"></div>
+  </section>
+  <section id="details" class="details-section">
+    <div class="section-heading"><div><span class="eyebrow">01 / АНАТОМИЯ СООРУЖЕНИЯ</span><h2>Детали, которые меняют взгляд.</h2></div><p>Нажмите на точку на чертеже<br>или выберите деталь ниже.</p></div>
+    <div class="anatomy-grid"><div class="point-list" id="point-list" role="group" aria-label="Детали сооружения"></div><article class="point-detail" id="point-detail" aria-live="polite"></article></div>
+    <div class="evidence-grid"><article class="evidence established"><span class="evidence-label"><i></i> ЧТО ИЗВЕСТНО</span><h3 id="known-title"></h3><p id="known-text"></p></article><article class="evidence unresolved"><span class="evidence-label"><i></i> ОТКРЫТЫЙ ВОПРОС</span><h3 id="unknown-title"></h3><p id="unknown-text"></p></article></div>
+    <div class="research-strip"><span class="research-icon">⌁</span><div><span class="eyebrow" id="research-label"></span><h3 id="research-title"></h3><p id="research-text"></p></div><button class="text-button sources-trigger" type="button">К источникам <span>↗</span></button></div>
+  </section>
+  <section class="construction-section" id="construction"><div class="section-heading"><div><span class="eyebrow">02 / ЛОГИКА СТРОИТЕЛЬСТВА</span><h2 id="process-heading">От каменоломни к вечности.</h2></div><span class="subtle-label">СВИДЕТЕЛЬСТВА + ИНТЕРПРЕТАЦИЯ</span></div><div class="process-grid" id="process-grid"></div><div class="recall"><div><span class="eyebrow">ОДНА МЫСЛЬ, ЧТОБЫ ЗАПОМНИТЬ</span><p id="recall-question"></p></div><button id="recall-button" type="button" aria-expanded="false" aria-controls="recall-answer">Показать ответ <span>+</span></button><p id="recall-answer" hidden></p></div></section>
+  <section class="timeline-section" id="timeline"><div class="section-heading"><div><span class="eyebrow">03 / МАСШТАБ ВРЕМЕНИ</span><h2>Не одна эпоха. Тысячелетия.</h2></div><p>От первых каменных пирамид<br>до поздних галерей Серапеума.</p></div><div class="timeline-scroll"><div class="timeline" id="timeline-items"></div></div><p class="timeline-note">Порядок событий; расстояния на линии условны. Даты приблизительны. Серапеум строился и расширялся на протяжении многих веков.</p></section>
+  <section class="sources-section"><span class="eyebrow">ЛЮБОПЫТСТВО НУЖДАЕТСЯ В ОПОРАХ</span><div><h2>За каждым чертежом —<br><em>следы, тексты, исследования.</em></h2><button class="sources-trigger source-button" type="button">Открыть источники <span>↗</span></button></div><p>Схемы созданы для объяснения конструкции. Установленные факты, рабочие гипотезы и неизвестное обозначены отдельно.</p></section>
+</main>
+<footer><a class="footer-brand" href="#atlas">KEMET<span>𓂀</span></a><span>Египет. Инженерия, пережившая время.</span><span>Интерактивный атлас · 2026</span></footer>
+<dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-top"><span class="eyebrow">БИБЛИОТЕКА АТЛАСА</span><button class="icon-button close-dialog" aria-label="Закрыть источники">✕</button></div><h2 id="sources-title">На чём основаны пояснения</h2><p class="dialog-intro">Официальные описания памятников, археологические материалы и научные публикации. Ссылки открываются в новой вкладке и требуют интернета.</p><div id="sources-list"></div><p class="dialog-footnote">Проверка источников: 9 октября 2026. Приблизительные размеры и датировки округлены. Иллюстрации авторские, схематические; пропорции отдельных внутренних элементов упрощены для читаемости.</p></dialog>
+<dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">О ПРОЕКТЕ</span><button class="icon-button close-dialog" aria-label="Закрыть информацию">✕</button></div><h2 id="about-title">Архитектура вечности</h2><p>«Кемет» — древнеегипетское название страны, обычно переводимое как «чёрная земля». Этот атлас посвящён тому, как люди превращали камень в сооружения невероятного масштаба.</p><p>Выберите памятник, переключайте объём, разрез и план. Пронумерованные точки связывают чертёж с объяснением. Бирюзовый цвет выделяет конструкцию и подтверждённые данные, янтарный — вопросы и интерпретации.</p><p>Все иллюстрации — учебные схемы, а не точные реконструкции. Общепринятая датировка и назначение отделены от нерешённых инженерных вопросов.</p><p>Сохранённый HTML-файл работает офлайн. Внешние источники доступны при подключении к интернету.</p></dialog>
+<dialog id="qr-dialog" aria-labelledby="qr-title"><div class="dialog-top"><span class="eyebrow">ВОЗЬМИТЕ АТЛАС С СОБОЙ</span><button class="icon-button close-dialog" aria-label="Закрыть QR-код">✕</button></div><h2 id="qr-title">Древний Египет.<br>В вашем телефоне.</h2><div class="qr-art"><!--__QR__--></div><p>Наведите камеру телефона на QR-код, чтобы открыть приложение.</p><a class="qr-url" href="https://evgk724.github.io/kemet-atlas/" target="_blank" rel="noopener noreferrer">evgk724.github.io/kemet-atlas ↗</a><button id="copy-link" class="source-button" type="button">Скопировать ссылку <span>↗</span></button></dialog>
+<div id="toast" class="toast" role="status"></div>
+<script>/*__DATA__*/</script><script>/*__DIAGRAMS__*/</script><script>/*__APP__*/</script>
+<script>/*__UPDATER__*/</script>
+</body>
+</html>
