@@ -2,6 +2,7 @@
 """Build KEMET from the checked-in source and stamp a static update manifest."""
 import argparse
 import base64
+import json
 from pathlib import Path
 from versioning import stamp
 
@@ -13,10 +14,11 @@ def data_uri(name):
 def build(export=None):
     html=(SRC/'shell.html').read_text()
     parts={
-        '/*__CSS__*/':'\n'.join((SRC/name).read_text() for name in ['style.css','readability.css','comfort.css','updater.css']),
+        '/*__CSS__*/':'\n'.join((SRC/name).read_text() for name in ['style.css','readability.css','comfort.css','engineering.css','updater.css']),
         '/*__DATA__*/':(SRC/'data.js').read_text(),
         '/*__DIAGRAMS__*/':(SRC/'diagrams.js').read_text(),
         '/*__APP__*/':(SRC/'app.js').read_text(),
+        '/*__ENGINEERING__*/': 'const ENGINEERING = '+json.dumps(json.loads((ROOT/'engineering.json').read_text()),ensure_ascii=False).replace('<','\\u003c')+';\n'+(SRC/'engineering.js').read_text(),
         '/*__UPDATER__*/':(SRC/'updater.js').read_text(),
         '<!--__QR__-->':(ROOT/'qr.svg').read_text(),
         '__APP_ICON_DATA__':data_uri('kemet-mark-v2.png'),
