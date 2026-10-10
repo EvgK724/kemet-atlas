@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta name="atlas-app" content="kemet"><meta name="atlas-version" content="r-254d8e3eab4c4f8f185b"><meta name="atlas-built" content="2026-10-10T07:00:52+00:00">
+  <meta name="atlas-app" content="kemet"><meta name="atlas-version" content="r-d43b6246785c22ba026c"><meta name="atlas-built" content="2026-10-10T07:11:37+00:00">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080e13">
@@ -137,7 +137,10 @@ dialog>p{font-size:1.125rem;line-height:1.8;font-weight:600}
 html,html[data-text-size="normal"]{font-size:20px}
 html[data-text-size="large"]{font-size:22px}
 html[data-text-size="xlarge"]{font-size:24px}
-body{font-size:1.125rem;font-weight:600}
+/* Explicit body sizes avoid a stale rem base during first paint in mobile WebKit. */
+body{font-size:22.5px;font-weight:600}
+html[data-text-size="large"] body{font-size:24.75px}
+html[data-text-size="xlarge"] body{font-size:27px}
 button,select,input{font-weight:700}
 h1,h2,h3,strong{font-weight:750}
 .reading-controls select{min-height:50px}.reading-controls{flex-wrap:wrap}
